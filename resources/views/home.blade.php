@@ -131,7 +131,7 @@
                             <a href="{{ route('about') }}" class="cta-btn primary">Discover ASARA <i
                                     class='bx bx-right-arrow-alt'></i></a>
                             <a href="tel:+8801711966255" class="cta-btn secondary"><i class='bx bx-phone-call'></i> +88
-                                01711966255</a>
+                                01911845500</a>
                         </div>
                     </div>
                 </div>

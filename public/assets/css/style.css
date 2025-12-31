@@ -140,7 +140,9 @@ button:focus {
 }
 
 img {
-  max-width: 80%;
+  /* max-width: 80%; */
+  max-width: 100%;
+
 }
 
 .ptb-100 {
@@ -272,7 +274,7 @@ Default Btn Style
 
 .default-bg-buttercup {
   /* background-color: #ffc20e; */
-   background-color: #0E4F27 !important;
+  background-color: #0E4F27 !important;
   color: #ffffff;
 }
 
@@ -332,7 +334,7 @@ Section Title Style
 
 .section-title p {
   padding-top: 15px;
-  max-width: 450px;
+  max-width: 580px;
   margin-bottom: 0;
 }
 
@@ -1462,7 +1464,7 @@ Service Area
   left: 0;
   right: 0;
   /* background-color: #FFC20E; */
-   background-color: #0E4F27;
+  background-color: #0E4F27;
   z-index: -1;
   opacity: 0;
   transition: 0.7s;
@@ -4346,25 +4348,30 @@ Apartment Area
 
  */
 /* === APARTMENT SLIDER – final, consistent rules (Owl v2) === */
-.apartment-slider{ position: relative; }
+.apartment-slider {
+  position: relative;
+}
 
 /* Overlay nav across the slide and use flex to place arrows */
-.apartment-slider .owl-nav{
-  position:absolute !important;
-  inset:0 !important;
-  display:flex !important;
-  align-items:flex-start !important;   /* was: center */
-  justify-content:space-between !important;
-  padding-top:200px !important;         /* ↑ increase = lower */
-  margin:0 !important;
-  pointer-events:none;
-  z-index:2;
+.apartment-slider .owl-nav {
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  /* was: center */
+  justify-content: space-between !important;
+  padding-top: 200px !important;
+  /* ↑ increase = lower */
+  margin: 0 !important;
+  pointer-events: none;
+  z-index: 2;
 }
 
 /* Arrow buttons */
 .apartment-slider .owl-nav .owl-prev,
-.apartment-slider .owl-nav .owl-next{
-  position: relative !important;               /* neutralize old absolute rules */
+.apartment-slider .owl-nav .owl-next {
+  position: relative !important;
+  /* neutralize old absolute rules */
   top: auto !important;
   transform: none !important;
   pointer-events: auto;
@@ -4375,17 +4382,18 @@ Apartment Area
 
 /* Hover state */
 .apartment-slider .owl-nav .owl-prev:hover,
-.apartment-slider .owl-nav .owl-next:hover{
+.apartment-slider .owl-nav .owl-next:hover {
   color: #FFC20E !important;
   background: transparent !important;
 }
 
 /* Mobile: nudge arrows lower but keep inside image */
-@media (max-width: 576px){
-  .apartment-slider .owl-nav{
-    align-items: flex-start !important;                 /* start from top */
+@media (max-width: 576px) {
+  .apartment-slider .owl-nav {
+    align-items: flex-start !important;
+    /* start from top */
     /* padding-top: clamp(14px, 13vw, 68px) !important;    move down responsively */
-    padding-top:100px !important;   
+    padding-top: 100px !important;
   }
 }
 
@@ -4507,12 +4515,13 @@ Counter Area
 .counter-color {
   color: #f0d696 !important;
 }
+
 /* Responsive */
 /* Desktop/base stays as-is (75px from your theme) */
 
 /* Tablet */
-@media (max-width: 992px){
-  .single-counter .content h3{
+@media (max-width: 992px) {
+  .single-counter .content h3 {
     font-size: 56px !important;
     line-height: 1.05;
     margin-bottom: 8px;
@@ -4520,8 +4529,8 @@ Counter Area
 }
 
 /* Large phones */
-@media (max-width: 768px){
-  .single-counter .content h3{
+@media (max-width: 768px) {
+  .single-counter .content h3 {
     font-size: 44px !important;
     line-height: 1.08;
     margin-bottom: 6px;
@@ -4529,8 +4538,8 @@ Counter Area
 }
 
 /* Small phones */
-@media (max-width: 576px){
-  .single-counter .content h3{
+@media (max-width: 576px) {
+  .single-counter .content h3 {
     font-size: 34px !important;
     line-height: 1.1;
     margin-bottom: 6px;

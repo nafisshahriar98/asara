@@ -17,9 +17,362 @@
         </div>
     </div>
     <!-- Inner Banner End -->
+    <!-- Leadership Messages Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    @php
+        /**
+         * Keep client text SAME, but fix formatting:
+         * - convert \r\n to \n
+         * - collapse many newlines to max 2
+         * - convert single newline to space
+         * - keep paragraph breaks (double newline)
+         */
+        function normalizeMessage($text)
+        {
+            $text = str_replace(["\r\n", "\r"], "\n", $text);
+            $text = preg_replace("/\n{3,}/", "\n\n", $text);
+            $text = preg_replace("/(?<!\n)\n(?!\n)/", " ", $text); // single \n => space
+            $text = trim($text);
+            return $text;
+        }
+
+        $msg1 = normalizeMessage(<<<'TEXT'
+        Dear Patrons:
+        As-Salamu-Alaikum-Wa-Rahmatullah!
+        By the grace of Almighty Allah, ASARA Properties had been established in January of the year 2018 with a view of “Comfort & Safety” in the construction of “Luxurious & Quality” residential apartments and Commercial spaces in various prime location of Dhaka city. In today’s day and age, a number of companies have engaged themselves in the real estate sector for the mitigation of housing accommodation.
+        ASARA Properties consists of a highly qualified, experienced, dynamic and inspired management team of Engineers, Architects, Marketing and other professionals.
+        We hope that you will continue to support us in all our future Endeavor with your inputs. We value your views immensely for the successful building of our country’s real sector.
+        We wish all of success to our clients and well-wishers.
+        TEXT);
+
+        $msg2 = normalizeMessage(<<<'TEXT'
+        Dear Well-Wishers.
+        As-Salamu-Alaikum-Wa-Rahmatullah!
+        By the grace of Almighty Allah, ASARA Properties had been established in January of the year 2018 with a view of “Comfort & Safety” in the construction of “Luxurious & Quality” residential apartments and Commercial spaces in various prime location of Dhaka city. In today’s day and age, a number of companies have engaged themselves in the real estate sector for the mitigation of housing accommodation.
+        ASARA Properties has a royal plan to introduce innovative ideas to represent building, comprising of all modern facilities for the comfort of clients.
+        Our aim is to develop quality housing & commercial properties with high standards at reasonable prices, to achieve customer contentment to respect and comply with Safety, Environmental and legal requirements.
+        We plan to build a “Smart Town” in the near future for the “Middle class earning Citizens” of Bangladesh.
+        We at O.K. Properties are loyal to endow the the best real estate investment opportunities, which convene customer expectation through creativity, continual development, professionalism, sincerity and reliability.
+        TEXT);
+
+        $msg3 = normalizeMessage(<<<'TEXT'
+        Dear Concern:
+        As-Salamu-Alaikum-Wa-Rahmatullah!
+        By the grace of Almighty Allah, Asara Properties. had been established in the year of 2018. It is our great pleasure to inform you that Asara Properties. is a remarkable Real Estate and construction developer company in Bangladesh. The company has promised to deliver a high standard of construction and services for its valued customers with better business norms and ethics.
+        We have own architectural and engineering design team who are competent to make flexible and readily adjustable to any design as per demand of our clients. Our technical team comprises of highly qualified architects, engineers and skilled workers who are create comprehensive experience in design, Fabrication, Erection of any construction works.
+        We are committed to provide world class quality services as well as best quality and making. We can assure that our services will be attractive, durable and energy-efficient.
+        TEXT);
+
+        $msg4 = normalizeMessage(<<<'TEXT'
+        Dear Concern:
+        As-Salamu-Alaikum-Wa-Rahmatullah!
+        By the grace of Almighty Allah, Asara Properties. had been established in the year of 2018. It is our great pleasure to inform you that Asara Properties. is a remarkable Real Estate and construction developer company in Bangladesh. The company has promised to deliver a high standard of construction and services for its valued customers with better business norms and ethics.
+        Asara Properties is committed to build long-term relationships based on integrity, performance, value, and client satisfaction. We will continue to meet the changing needs of the government's various organizations with our quality services delivered by the most qualified people.
+
+        Quality in all our work is the key. We work in close relation with clients, service providers and architects to obtain optimal team work and efficiency by which to become a legend construction company.
+        TEXT);
+    @endphp
+
+    <section class="forward-area forward-area-mt leadership-area">
+        <div class="container">
+            <div class="section-title text-center mb-4">
+                <span>MESSAGE FROM COMPANY</span>
+                <h2>Go Forward With <b>Us</b></h2>
+            </div>
+
+            <div class="swiper leadershipSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="leadership-card">
+                            <div class="leadership-img">
+                                <img src="{{ asset('assets/img/team/4.jpeg') }}" alt="Syed Akbar Kabir">
+                            </div>
+
+                            <div class="leadership-content">
+                                <div class="section-title">
+                                    
+                                    <h3>Syed Akbar Kabir</h3>
+                                    <small>Chairman, ASARA Properties</small>
+
+                                    <p class="leadership-message">{!! nl2br(e($msg1)) !!}</p>
+                                </div>
+
+                                <!-- <a href="{{ route('contact') }}" class="default-btn default-bg-buttercup">
+                                    Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="leadership-card">
+                            <div class="leadership-img">
+                                <img src="{{ asset('assets/img/team/2.jpeg') }}" alt="KM Zahirul Ameen">
+                            </div>
+
+                            <div class="leadership-content">
+                                <div class="section-title">
+                                    
+                                    <h3>KM Zahirul Ameen</h3>
+                                    <small>Managing Partner & CEO, ASARA Properties</small>
+
+                                    <p class="leadership-message">{!! nl2br(e($msg2)) !!}</p>
+                                </div>
+
+                                <!-- <a href="{{ route('contact') }}" class="default-btn default-bg-buttercup">
+                                    Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="leadership-card">
+                            <div class="leadership-img">
+                                <img src="{{ asset('assets/img/team/3.jpeg') }}" alt="Md Soebul Islam Roman">
+                            </div>
+
+                            <div class="leadership-content">
+                                <div class="section-title">
+                                    
+                                    <h3>Md Soebul Islam Roman</h3>
+                                    <small>Director- Finance & Administration, ASARA Properties</small>
+
+                                    <p class="leadership-message">{!! nl2br(e($msg3)) !!}</p>
+                                </div>
+
+                                <!-- <a href="{{ route('contact') }}" class="default-btn default-bg-buttercup">
+                                    Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="leadership-card">
+                            <div class="leadership-img">
+                                <img src="{{ asset('assets/img/team/1.jpeg') }}" alt="Md Aminul Islam">
+                            </div>
+
+                            <div class="leadership-content">
+                                <div class="section-title">
+                                    
+                                    <h3>Md Aminul Islam</h3>
+                                    <small>Director- Sales, ASARA Properties</small>
+
+                                    <p class="leadership-message">{!! nl2br(e($msg4)) !!}</p>
+                                </div>
+
+                                <!-- <a href="{{ route('contact') }}" class="default-btn default-bg-buttercup">
+                                    Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev leadership-prev"></div>
+                <div class="swiper-button-next leadership-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Swiper('.leadershipSwiper', {
+                loop: true,
+                speed: 500,
+                // keep height stable by NOT using autoHeight
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.leadership-next',
+                    prevEl: '.leadership-prev',
+                },
+            });
+        });
+    </script>
+
+    <style>
+        /* ====== Leadership section: remove theme decorative shapes/lines ====== */
+        .leadership-area {
+            position: relative;
+            overflow: hidden;
+            background: transparent !important;
+        }
+
+        .leadership-area::before,
+        .leadership-area::after,
+        .leadership-area .container::before,
+        .leadership-area .container::after,
+        .leadership-area .row::before,
+        .leadership-area .row::after,
+        .leadership-area .forward-img::before,
+        .leadership-area .forward-img::after,
+        .leadership-area .forward-content::before,
+        .leadership-area .forward-content::after {
+            content: none !important;
+            display: none !important;
+            background: none !important;
+        }
+
+        .leadership-area .swiper,
+        .leadership-area .swiper-wrapper,
+        .leadership-area .swiper-slide {
+            background: transparent !important;
+        }
+
+        /* ====== Card layout ====== */
+        .leadership-area .leadership-card {
+            display: grid;
+            grid-template-columns: 1fr 1.25fr;
+            gap: 36px;
+            align-items: center;
+
+            background: #fbf4e7;
+            border-radius: 14px;
+            padding: 36px;
+
+            overflow: hidden;
+        }
+
+        /* ====== Image box (NO CROP, standard look) ====== */
+        .leadership-area .leadership-img {
+            border-radius: 12px;
+            overflow: hidden;
+            background: #ffffff;
+            padding: 14px;
+            /* clean white frame */
+        }
+
+        .leadership-area .leadership-img img {
+            width: 100%;
+            height: 420px;
+
+            object-fit: contain;
+            /* ✅ prevents cropping */
+            object-position: center;
+
+            display: block;
+            background: #ffffff;
+            border-radius: 10px;
+        }
+
+        /* ====== Content column (push button lower) ====== */
+        .leadership-area .leadership-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .leadership-area .leadership-content small {
+            display: inline-block;
+            margin-top: 6px;
+            opacity: .8;
+        }
+
+        /* Make the label look standard */
+        .leadership-area .leadership-content .section-title span {
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            font-size: 12px;
+            opacity: .75;
+        }
+
+        /* ====== Message box (stable height so beige doesn't jump) ====== */
+        .leadership-message {
+            margin-top: 16px;
+            white-space: normal;
+            line-height: 1.9;
+            font-size: 15px;
+            color: #555;
+
+            max-height: 320px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        /* nicer scrollbar (optional but looks premium) */
+        .leadership-message::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .leadership-message::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, .18);
+            border-radius: 10px;
+        }
+
+        /* Button slightly lower + aligned */
+        .leadership-area .default-btn {
+            margin-top: 18px;
+            /* ✅ lowers button */
+            align-self: flex-start;
+        }
+
+        /* ====== Swiper spacing + controls ====== */
+        .leadership-area .swiper {
+            padding: 10px 10px 45px;
+        }
+
+        .leadership-area .swiper-button-prev,
+        .leadership-area .swiper-button-next {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #0c3b2e;
+            color: #fff;
+        }
+
+        .leadership-area .swiper-button-prev:after,
+        .leadership-area .swiper-button-next:after {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        /* Pagination dots spacing */
+        .leadership-area .swiper-pagination {
+            bottom: 8px !important;
+        }
+
+        /* ====== Responsive ====== */
+        @media (max-width: 991px) {
+            .leadership-area .leadership-card {
+                grid-template-columns: 1fr;
+                gap: 22px;
+                padding: 24px;
+            }
+
+            .leadership-area .leadership-img img {
+                height: 280px;
+            }
+
+            .leadership-message {
+                max-height: 320px;
+            }
+        }
+    </style>
+    <!-- Leadership Messages Slider End -->
+
+
+
+
+
+
+
 
     <!-- Forward Area -->
-    <div class="forward-area forward-area-mt ">
+    <!-- <div class="forward-area forward-area-mt ">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
@@ -69,7 +422,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Forward Area End -->
 
     <!-- About Area -->
@@ -409,8 +762,8 @@
                             </p>
                         </div>
                         <!-- <div class="innovation-btn">
-                                                        <a href="property-details.html" class="default-btn default-hot-toddy">View Details <i class='bx bx-right-arrow-alt'></i></a>
-                                                    </div> -->
+                                                                                <a href="property-details.html" class="default-btn default-hot-toddy">View Details <i class='bx bx-right-arrow-alt'></i></a>
+                                                                            </div> -->
                     </div>
                 </div>
 
@@ -436,13 +789,13 @@
                             </div>
 
                             <!-- <div class="innovation-item">
-                                            <i class='flaticon-growth'></i>
-                                            <h3>Designed Marvel</h3>
-                                            <p>
-                                                Lorem ipsum doconsectetur adipisicing elit sed do eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua.Ut eveniam
-                                            </p>
-                                        </div> -->
+                                                                    <i class='flaticon-growth'></i>
+                                                                    <h3>Designed Marvel</h3>
+                                                                    <p>
+                                                                        Lorem ipsum doconsectetur adipisicing elit sed do eiusmod tempor
+                                                                        incididunt ut labore et dolore magna aliqua.Ut eveniam
+                                                                    </p>
+                                                                </div> -->
                         </div>
                     </div>
                 </div>

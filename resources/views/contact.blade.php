@@ -30,9 +30,9 @@
                         <p class="text-break">Lorem ipsum dolor sitameem adipiscing cnsectetur adisci- mod tur
                             adipiscing</p>
                         <!-- <a href="#" class="learn-more-btn">
-                                                            Learn More
-                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                        </a> -->
+                                                                    Learn More
+                                                                    <i class='bx bx-right-arrow-alt'></i>
+                                                                </a> -->
                     </div>
                 </div>
 
@@ -45,9 +45,9 @@
                         <p class="text-break">Lorem ipsum dolor sitameem adipiscing cnsectetur adisci- mod tur
                             adipiscing</p>
                         <!-- <a href="#" class="learn-more-btn">
-                                                            Learn More
-                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                        </a> -->
+                                                                    Learn More
+                                                                    <i class='bx bx-right-arrow-alt'></i>
+                                                                </a> -->
                     </div>
                 </div>
 
@@ -60,9 +60,9 @@
                         <p class="text-break">Lorem ipsum dolor sitameem adipiscing cnsectetur adisci- mod tur
                             adipiscing</p>
                         <!-- <a href="#" class="learn-more-btn">
-                                                            Learn More
-                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                        </a> -->
+                                                                    Learn More
+                                                                    <i class='bx bx-right-arrow-alt'></i>
+                                                                </a> -->
                     </div>
                 </div>
 
@@ -75,9 +75,9 @@
                         <p class="text-break">Lorem ipsum dolor sitameem adipiscing cnsectetur adisci- mod tur
                             adipiscing</p>
                         <!-- <a href="#" class="learn-more-btn">
-                                                            Learn More
-                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                        </a> -->
+                                                                    Learn More
+                                                                    <i class='bx bx-right-arrow-alt'></i>
+                                                                </a> -->
                     </div>
                 </div>
             </div>
@@ -124,7 +124,13 @@
                                         <div>
                                             <div class="text-muted small fw-semibold">Phone</div>
                                             <a href="tel:+8801711966255" class="link-underline link-underline-opacity-0">
-                                                +88 01711966255
+                                                +88 01711966255,
+                                            </a>
+                                            <a href="tel:+8801722222789" class="link-underline link-underline-opacity-0">
+                                                +88 01722222789,
+                                            </a>
+                                            <a href="tel:+8801911845500" class="link-underline link-underline-opacity-0">
+                                                +88 01911845500
                                             </a>
                                         </div>
                                     </div>

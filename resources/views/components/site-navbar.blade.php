@@ -310,22 +310,24 @@
                         </div>
 
                         <div class="navbar-phone"
-                            style="font-weight:600; color:#0E4F27; display:inline-flex; align-items:center; flex-wrap:wrap; gap:5px; cursor:pointer;"
-                            onclick="togglePhoneNumber()">
+  style="font-weight:600; color:#0E4F27; display:inline-flex; align-items:center; flex-wrap:wrap; gap:5px; cursor:pointer;"
+  onclick="togglePhoneNumber()">
 
-                            <i class="bx bx-phone"
-                                style="font-size:18px; vertical-align:middle; transition:color 0.3s;"></i>
+  <i class="bx bxl-whatsapp"
+     style="font-size:18px; vertical-align:middle; transition:color 0.3s;"></i>
 
-                            <span id="phone-label" style="transition:color 0.3s;">Phone</span>
+  <span id="phone-label" style="transition:color 0.3s;">WhatsApp</span>
 
-                            <span id="colon" style="opacity:0; transition:opacity 0.3s;">:</span>
+  <span id="colon" style="opacity:0; transition:opacity 0.3s;">:</span>
 
-                            <a id="phone-link" href="tel:+8801711966255"
-                                style="color:#0E4F27; text-decoration:none; opacity:0; max-width:0; overflow:hidden; transition:all 0.4s ease; white-space:nowrap;"
-                                onmouseover="this.style.color='#FFB400'" onmouseout="this.style.color='#0E4F27'">
-                                +88 01711966255
-                            </a>
-                        </div>
+  <a id="phone-link" href="https://wa.me/8801722222789"
+     target="_blank"
+     style="color:#0E4F27; text-decoration:none; opacity:0; max-width:0; overflow:hidden; transition:all 0.4s ease; white-space:nowrap;"
+     onmouseover="this.style.color='#FFB400'" onmouseout="this.style.color='#0E4F27'">
+    +88 01722222789
+  </a>
+</div>
+
 
                     </div>
 
