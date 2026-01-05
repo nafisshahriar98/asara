@@ -30,9 +30,9 @@
                         <p class="text-break">Lorem ipsum dolor sitameem adipiscing cnsectetur adisci- mod tur
                             adipiscing</p>
                         <!-- <a href="#" class="learn-more-btn">
-                                                                    Learn More
-                                                                    <i class='bx bx-right-arrow-alt'></i>
-                                                                </a> -->
+                                                                                Learn More
+                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                            </a> -->
                     </div>
                 </div>
 
@@ -45,9 +45,9 @@
                         <p class="text-break">Lorem ipsum dolor sitameem adipiscing cnsectetur adisci- mod tur
                             adipiscing</p>
                         <!-- <a href="#" class="learn-more-btn">
-                                                                    Learn More
-                                                                    <i class='bx bx-right-arrow-alt'></i>
-                                                                </a> -->
+                                                                                Learn More
+                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                            </a> -->
                     </div>
                 </div>
 
@@ -60,9 +60,9 @@
                         <p class="text-break">Lorem ipsum dolor sitameem adipiscing cnsectetur adisci- mod tur
                             adipiscing</p>
                         <!-- <a href="#" class="learn-more-btn">
-                                                                    Learn More
-                                                                    <i class='bx bx-right-arrow-alt'></i>
-                                                                </a> -->
+                                                                                Learn More
+                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                            </a> -->
                     </div>
                 </div>
 
@@ -75,9 +75,9 @@
                         <p class="text-break">Lorem ipsum dolor sitameem adipiscing cnsectetur adisci- mod tur
                             adipiscing</p>
                         <!-- <a href="#" class="learn-more-btn">
-                                                                    Learn More
-                                                                    <i class='bx bx-right-arrow-alt'></i>
-                                                                </a> -->
+                                                                                Learn More
+                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                            </a> -->
                     </div>
                 </div>
             </div>
@@ -98,22 +98,6 @@
                             <p class="text-muted mb-4">We’re here to help. Reach us via address, phone, or email.</p>
 
                             <ul class="list-group list-group-flush contact-list">
-                                <!-- Address -->
-                                <li class="list-group-item px-0 py-3">
-                                    <div class="d-flex align-items-start gap-3">
-                                        <span class="icon-circle">
-                                            <i class="bi bi-geo-alt"></i>
-                                        </span>
-                                        <div>
-                                            <div class="text-muted small fw-semibold">Address</div>
-                                            <address class="mb-0 not-italic">
-                                                Ga- 30/B, Level- 08, Suite- 8/A,<br>
-                                                Mysha Chowdhury Tower, Shahjadpur,<br>
-                                                Gulshan, Dhaka-1212.
-                                            </address>
-                                        </div>
-                                    </div>
-                                </li>
 
                                 <!-- Phone -->
                                 <li class="list-group-item px-0 py-3">
@@ -123,18 +107,61 @@
                                         </span>
                                         <div>
                                             <div class="text-muted small fw-semibold">Phone</div>
+
+                                            <!-- ✅ Office number first -->
                                             <a href="tel:+8801711966255" class="link-underline link-underline-opacity-0">
-                                                +88 01711966255,
-                                            </a>
+                                                +88 01711966255
+                                            </a><span>, </span>
+
                                             <a href="tel:+8801722222789" class="link-underline link-underline-opacity-0">
-                                                +88 01722222789,
-                                            </a>
+                                                +88 01722222789
+                                            </a><span>, </span>
+
                                             <a href="tel:+8801911845500" class="link-underline link-underline-opacity-0">
                                                 +88 01911845500
                                             </a>
                                         </div>
                                     </div>
                                 </li>
+                                <!-- Address -->
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <span class="icon-circle">
+                                            <i class="bi bi-geo-alt"></i>
+                                        </span>
+                                        <div>
+                                            <div class="text-muted small fw-semibold">Address</div>
+
+                                            <!-- ✅ Google Map Link added -->
+                                            <a href="https://maps.app.goo.gl/dyZTnFfByZMUY4HX7"
+                                                target="_blank" class="link-underline link-underline-opacity-0">
+                                                <address class="mb-0 not-italic">
+                                                    Ga- 30/B, Level- 08, Suite- 8/A,<br>
+                                                    Mysha Chowdhury Tower, Shahjadpur,<br>
+                                                    Gulshan, Dhaka-1212.
+                                                </address>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- ✅ Office Time -->
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <span class="icon-circle">
+                                            <i class="bi bi-clock"></i>
+                                        </span>
+                                        <div>
+                                            <div class="text-muted small fw-semibold">Office Time</div>
+                                            <div class="fw-medium">
+                                                Saturday to Thursday (9:00 AM – 6:00 PM)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
 
                                 <!-- Email -->
                                 <li class="list-group-item px-0 py-3">
@@ -152,6 +179,7 @@
                                     </div>
                                 </li>
                             </ul>
+
 
                             <!-- Quick actions (optional) -->
                             <div class="d-flex flex-wrap gap-2 mt-4">
@@ -282,12 +310,6 @@
     </div>
     <!-- newsletter Area End -->
 
-
-
-
-
-
-
     <style>
         /* Style phone and email links */
             {
@@ -350,7 +372,5 @@
         address.not-italic {
             font-style: normal;
         }
-    </style>
-
     </style>
 @endsection

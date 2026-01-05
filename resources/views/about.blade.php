@@ -11,7 +11,7 @@
             <div class="container-max">
                 <div class="inner-title">
                     <span>ABOUT US</span>
-                    <h2>We Have A Goal To Achieve you <br> To Your Destination</h2>
+                    <h2>We Have A Goal To Achieve you <br> To Your Dream Home</h2>
                 </div>
             </div>
         </div>

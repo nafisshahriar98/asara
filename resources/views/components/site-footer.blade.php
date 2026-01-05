@@ -166,16 +166,29 @@
                             Gulshan, Dhaka-1212.
                         </p>
                         <ul class="social-link">
-                            <li><a href="https://www.facebook.com/login/" target="_blank"><i
+                            <li><a href="https://www.facebook.com/asaraproperties" target="_blank"><i
                                         class='bx bxl-facebook'></i></a></li>
                             <li><a href="https://twitter.com/i/flow/login" target="_blank"><i
                                         class='bx bxl-twitter'></i></a></li>
-                            <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                            <li><a href="https://www.instagram.com/asraproperties/" target="_blank"><i
                                         class='bx bxl-instagram'></i></a></li>
+                            <li>
+                                <a class="whatsapp" href="https://wa.me/8801722222789" target="_blank"
+                                    aria-label="WhatsApp">
+                                    <i class="bx bxl-whatsapp"></i>
+                                </a>
+                            </li>
+
+
                             <li><a href="https://www.pinterest.com/" target="_blank"><i
                                         class='bx bxl-pinterest-alt'></i></a></li>
-                            <li><a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i></a>
+                            <li>
+                                <a class="youtube" href="https://www.youtube.com/@asaraproperties9769" target="_blank"
+                                    aria-label="YouTube">
+                                    <i class='bx bxl-youtube'></i>
+                                </a>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -204,7 +217,7 @@
                                     <i class='bx bx-plus'></i> Contact Us
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -213,8 +226,7 @@
                     <div class="single-footer-widget single-footer-color pl-3">
                         <h3>CONTACT INFO</h3>
                         <ul class="footer-contact-list">
-                            <li><span>Monday - Friday :</span> 9 am to 6 pm</li>
-                            <li><span>Saturday - Sunday :</span> 9 am to 2 pm</li>
+                            <li><span>Saturday to Thursday  :</span> 9:00 AM – 6:00 PM</li>
                             <li><span>Phone :</span> <a href="tel:+8801711966255">+88 01711966255</a></li>
                             <li><span>Email :</span> <a
                                     href="mailto:asarapropertiesbd@gmail.com">asarapropertiesbd@gmail.com</a></li>
@@ -270,9 +282,34 @@
                 <!-- <p>© ASARA is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrp</a></p> -->
                 <p className="copyright">Copyright &copy; <span>2014-2025</span> Ridgeben IT Solutions.
                     All rights reserved.</p>
-            </div> 
-           
+            </div>
+
         </div>
     </div>
+
+
+    <style>
+        /* WhatsApp green */
+        .social-link li a.whatsapp {
+            background: #25D366 !important;
+            color: #fff !important;
+        }
+
+        .social-link li a.whatsapp:hover {
+            background: #1ebe5d !important;
+            color: #fff !important;
+        }
+
+        /* YouTube red */
+        .social-link li a.youtube {
+            background: #FF0000 !important;
+            color: #fff !important;
+        }
+
+        .social-link li a.youtube:hover {
+            background: #d90000 !important;
+            color: #fff !important;
+        }
+    </style>
 </footer>
 <!-- Footer Area End -->

@@ -749,7 +749,7 @@
 
                 <div class="col-lg-6">
                     <div class="apartment-btn">
-                        <a href={{"about"}} class="default-btn default-sante-fe">
+                        <a href="{{ route('about') }}" class="default-btn default-sante-fe">
                             Discover More
                             <i class='bx bx-right-arrow-alt'></i>
                         </a>
@@ -1459,6 +1459,8 @@
             </div>
         </div>
     </section>
+
+    
     <!-- Owl CSS/JS (use your local assets if you already include them ONCE) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1962,8 +1964,301 @@
 
 
 
+
+
+
+
+
+<!-- =======================
+     Client Reviews / Testimonials
+======================== -->
+<section class="review-section pt-100 pb-70">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+                <div class="section-title-two">
+                    <span class="section-span-bg">CLIENT REVIEWS</span>
+                    <h2>What People Say <b class="section-color">About ASHARA</b></h2>
+                    <p class="mt-2">
+                        Honest feedback from clients who trusted us with their homes and investments.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-slider owl-carousel owl-theme pt-45">
+
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar">
+                        <img src="{{ asset('assets/img/user/1.jpg') }}" alt="Client">
+                    </div>
+                    <div class="review-meta">
+                        <h4>Mahmud Hasan</h4>
+                        <span>Apartment Owner</span>
+                    </div>
+                    <div class="review-quote">
+                        <i class='bx bxs-quote-alt-right'></i>
+                    </div>
+                </div>
+
+                <div class="review-stars" aria-label="5 star rating">
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                </div>
+
+                <p class="review-text">
+                    The handover was on time and the finishing quality is excellent. Their team was responsive and transparent throughout.
+                </p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar">
+                        <img src="{{ asset('assets/img/user/2.jpg') }}" alt="Client">
+                    </div>
+                    <div class="review-meta">
+                        <h4>Nusrat Jahan</h4>
+                        <span>Commercial Client</span>
+                    </div>
+                    <div class="review-quote">
+                        <i class='bx bxs-quote-alt-right'></i>
+                    </div>
+                </div>
+
+                <div class="review-stars" aria-label="4 star rating">
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i>
+                </div>
+
+                <p class="review-text">
+                    Great planning and project management. We felt confident because the updates were regular and clear.
+                </p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar">
+                        <img src="{{ asset('assets/img/user/3.jpg') }}" alt="Client">
+                    </div>
+                    <div class="review-meta">
+                        <h4>Imran Kabir</h4>
+                        <span>Investor</span>
+                    </div>
+                    <div class="review-quote">
+                        <i class='bx bxs-quote-alt-right'></i>
+                    </div>
+                </div>
+
+                <div class="review-stars" aria-label="5 star rating">
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                </div>
+
+                <p class="review-text">
+                    Professional service and very strong after-sales support. Highly recommended for modern property solutions.
+                </p>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="review-avatar">
+                        <img src="{{ asset('assets/img/user/4.jpg') }}" alt="Client">
+                    </div>
+                    <div class="review-meta">
+                        <h4>Shamima Akter</h4>
+                        <span>Home Buyer</span>
+                    </div>
+                    <div class="review-quote">
+                        <i class='bx bxs-quote-alt-right'></i>
+                    </div>
+                </div>
+
+                <div class="review-stars" aria-label="5 star rating">
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                </div>
+
+                <p class="review-text">
+                    Loved the design and the ventilation. They listened to our needs and guided us properly from day one.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+    /* Center the whole heading block */
+.review-section .section-title-two{
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make the top small label truly centered */
+.review-section .section-title-two .section-span-bg{
+  display: inline-block;
+  margin: 0 auto 10px;
+}
+
+/* Center the main title + keep it in the middle */
+.review-section .section-title-two h2{
+  margin: 0 auto !important;
+  max-width: 900px;           /* optional: keeps it nicely centered on wide screens */
+}
+
+/* Center the description text too */
+.review-section .section-title-two p{
+  margin: 12px auto 0 !important;
+  max-width: 650px;
+}
+
+    .review-section{
+  background: #fbf3e9;
+}
+
+.review-slider .review-card{
+  background: #fff;
+  border: 1px solid rgba(14,79,39,.12);
+  border-radius: 14px;
+  padding: 26px 22px;
+  transition: .25s;
+  box-shadow: 0 10px 26px rgba(0,0,0,.05);
+  min-height: 260px;
+}
+
+.review-slider .review-card:hover{
+  transform: translateY(-6px);
+  border-color: rgba(14,79,39,.25);
+}
+
+.review-top{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.review-avatar{
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #FFB400;
+  flex: 0 0 auto;
+}
+
+.review-avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.review-meta h4{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0E4F27;
+}
+
+.review-meta span{
+  font-size: 13px;
+  color: #666;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.review-quote{
+  margin-left: auto;
+  font-size: 34px;
+  color: rgba(14,79,39,.18);
+}
+
+.review-stars{
+  display: flex;
+  gap: 2px;
+  margin: 10px 0 12px;
+  color: #FFB400;
+  font-size: 18px;
+}
+
+.review-text{
+  margin: 0;
+  color: #555;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.review-slider.owl-theme .owl-dots{
+  margin-top: 18px;
+}
+
+.review-slider.owl-theme .owl-dots .owl-dot span{
+  width: 9px;
+  height: 9px;
+}
+
+.review-slider.owl-theme .owl-dots .owl-dot.active span{
+  background: #0E4F27;
+}
+
+</style>
+
+<script>
+    $(function () {
+  var $r = $('.review-slider');
+
+  if ($r.length) {
+    if ($r.hasClass('owl-loaded')) {
+      $r.trigger('destroy.owl.carousel');
+      $r.removeClass('owl-loaded');
+      $r.find('.owl-stage-outer').children().unwrap();
+    }
+
+    $r.owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3500,
+      autoplayHoverPause: true,
+      smartSpeed: 650,
+      margin: 18,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 1 },
+        768: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+  }
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- newsletter Area -->
-    <div class="newsletter-area pt-100 pb-70">
+    <!-- <div class="newsletter-area pt-100 pb-70" style="background-color: #fff;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
@@ -1989,6 +2284,20 @@
             </div>
         </div>
     </div>
+    <style>
+        /* Newsletter input black border */
+.newsletter-area .newsletter-form .form-control{
+  border: 1px solid #000 !important;
+  box-shadow: none !important;
+}
+
+/* Optional: keep border black on focus too */
+.newsletter-area .newsletter-form .form-control:focus{
+  border-color: #000 !important;
+  box-shadow: none !important;
+}
+
+    </style> -->
     <!-- newsletter Area End -->
 
 
