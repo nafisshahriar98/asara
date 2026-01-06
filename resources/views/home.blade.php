@@ -9,10 +9,10 @@
     <!-- Home Slider Two -->
     <div class="home-slider-two owl-carousel owl-theme">
         <div class="home-slider-item item-bg1" style="background-image:url('{{ asset('assets/img/home2/1.jpg') }}'); 
-                                                                                            background-size:cover; 
-                                                                                            background-position:center; 
-                                                                                            background-repeat:no-repeat; 
-                                                                                            min-height:70vh;">
+                                                                                                background-size:cover; 
+                                                                                                background-position:center; 
+                                                                                                background-repeat:no-repeat; 
+                                                                                                min-height:70vh;">
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container-fluid">
@@ -39,10 +39,10 @@
         </div>
 
         <div class="home-slider-item item-bg2" style="background-image:url('{{ asset('assets/img/home2/2.jpg') }}'); 
-                                                                                            background-size:cover; 
-                                                                                            background-position:center; 
-                                                                                            background-repeat:no-repeat; 
-                                                                                            min-height:70vh;">
+                                                                                                background-size:cover; 
+                                                                                                background-position:center; 
+                                                                                                background-repeat:no-repeat; 
+                                                                                                min-height:70vh;">
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container-fluid">
@@ -69,10 +69,10 @@
         </div>
 
         <div class="home-slider-item item-bg3" style="background-image:url('{{ asset('assets/img/home2/1.jpg') }}'); 
-                                                                                            background-size:cover; 
-                                                                                            background-position:center; 
-                                                                                            background-repeat:no-repeat; 
-                                                                                            min-height:70vh;">
+                                                                                                background-size:cover; 
+                                                                                                background-position:center; 
+                                                                                                background-repeat:no-repeat; 
+                                                                                                min-height:70vh;">
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container-fluid">
@@ -102,8 +102,8 @@
 
 
     <!-- =======================
-                                     Hero Slider (Drop-in)
-                                ======================== -->
+                                         Hero Slider (Drop-in)
+                                    ======================== -->
     <!-- Owl CSS (keep if already included) -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/owl/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/plugins/owl/owl.theme.default.min.css') }}">
@@ -116,9 +116,9 @@
                 <div class="container">
                     <div class="slider-content modern-style">
                         <!-- <h1 class="main-heading">
-                                            <span>Find Your Perfect Home,</span>
-                                            <b>Built for Modern Living</b>
-                                          </h1> -->
+                                                <span>Find Your Perfect Home,</span>
+                                                <b>Built for Modern Living</b>
+                                              </h1> -->
                         <h1 class="main-heading">
                             <span class="line line-1">Your Perfect Home</span>
                             <span class="line line-2">Built for Modern Living</span>
@@ -287,20 +287,20 @@
 
         .cta-btn.primary {
             /* background: #FFB400;
-                                    color: #0E4F27;
-                                    border: 2px solid #FFB400; */
+                                        color: #0E4F27;
+                                        border: 2px solid #FFB400; */
             background: #0E4F27;
             color: #fff;
             border: 2px solid #0E4F27;
         }
 
         /*
-                                .cta-btn.primary:hover {
-                                    background: #0E4F27;
-                                    color: #fff;
-                                    border-color: #0E4F27;
-                                }
-                                */
+                                    .cta-btn.primary:hover {
+                                        background: #0E4F27;
+                                        color: #fff;
+                                        border-color: #0E4F27;
+                                    }
+                                    */
         .cta-btn.secondary {
             background: transparent;
             border: 2px solid #FFB400;
@@ -393,36 +393,56 @@
                 transform: translateY(-6px)
             }
         }
+
         /* Fix hero slider horizontal overflow */
-.hero-wrap,
-.home-slider-two{
-  position: relative;
-  overflow: hidden;            /* clip sideways overflow */
-  overscroll-behavior-x: none; /* stop iOS rubber-band */
-}
+        .hero-wrap,
+        .home-slider-two {
+            position: relative;
+            overflow: hidden;
+            /* clip sideways overflow */
+            overscroll-behavior-x: none;
+            /* stop iOS rubber-band */
+        }
 
-.home-slider-two .owl-stage-outer{ overflow:hidden; }
-.home-slider-two .owl-stage{ display:block; }
-.home-slider-two .owl-item{ display:block; float:left; }
+        .home-slider-two .owl-stage-outer {
+            overflow: hidden;
+        }
 
-/* Keep Owl nav arrows inside the slider bounds */
-.home-slider-two.owl-theme .owl-nav{
-  position: absolute; inset: 0;
-  pointer-events: none;
-}
-.home-slider-two.owl-theme .owl-nav .owl-prev,
-.home-slider-two.owl-theme .owl-nav .owl-next{
-  pointer-events: auto;
-  position: absolute; top: 50%;
-  transform: translateY(-50%);
-  margin: 0;
-}
-.home-slider-two.owl-theme .owl-nav .owl-prev{ left: 10px; }
-.home-slider-two.owl-theme .owl-nav .owl-next{ right: 10px; }
+        .home-slider-two .owl-stage {
+            display: block;
+        }
 
-/* Optional last-resort guard if anything else still causes scrolling */
-/* body{ overflow-x:hidden; } */
+        .home-slider-two .owl-item {
+            display: block;
+            float: left;
+        }
 
+        /* Keep Owl nav arrows inside the slider bounds */
+        .home-slider-two.owl-theme .owl-nav {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
+
+        .home-slider-two.owl-theme .owl-nav .owl-prev,
+        .home-slider-two.owl-theme .owl-nav .owl-next {
+            pointer-events: auto;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+        }
+
+        .home-slider-two.owl-theme .owl-nav .owl-prev {
+            left: 10px;
+        }
+
+        .home-slider-two.owl-theme .owl-nav .owl-next {
+            right: 10px;
+        }
+
+        /* Optional last-resort guard if anything else still causes scrolling */
+        /* body{ overflow-x:hidden; } */
     </style>
 
     <!-- ====== JS (Owl + init) ====== -->
@@ -473,9 +493,9 @@
                         <p class="text-break">Expertly managing properties to maximize value, efficiency, and tenant
                             satisfaction</p>
                         <!-- <a href="service-details.html" class="learn-more-btn">
-                                                                                                            Learn More
-                                                                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                                                                        </a> -->
+                                                                                                                Learn More
+                                                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                                                            </a> -->
                     </div>
                 </div>
 
@@ -488,9 +508,9 @@
                         <p class="text-break">Developing quality commercial spaces designed for growth and long-term
                             investment</p>
                         <!-- <a href="service-details.html" class="learn-more-btn">
-                                                                                                            Learn More
-                                                                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                                                                        </a> -->
+                                                                                                                Learn More
+                                                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                                                            </a> -->
                     </div>
                 </div>
 
@@ -503,9 +523,9 @@
                         <p class="text-break">Overseeing projects with precision, ensuring timely delivery, quality, and
                             cost efficiency</p>
                         <!-- <a href="service-details.html" class="learn-more-btn">
-                                                                                                            Learn More
-                                                                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                                                                        </a> -->
+                                                                                                                Learn More
+                                                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                                                            </a> -->
                     </div>
                 </div>
 
@@ -518,9 +538,9 @@
                         <p class="text-break">Building modern, comfortable homes with thoughtful design and superior
                             craftsmanship</p>
                         <!-- <a href="service-details.html" class="learn-more-btn">
-                                                                                                            Learn More
-                                                                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                                                                        </a> -->
+                                                                                                                Learn More
+                                                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                                                            </a> -->
                     </div>
                 </div>
             </div>
@@ -554,9 +574,9 @@
                         </div>
                         <div class="property-btn">
                             <!-- <a href="#" class="default-btn default-sante-fe">
-                                                                                                                View Details
-                                                                                                                <i class='bx bx-right-arrow-alt'></i>
-                                                                                                            </a> -->
+                                                                                                                    View Details
+                                                                                                                    <i class='bx bx-right-arrow-alt'></i>
+                                                                                                                </a> -->
                         </div>
                     </div>
                 </div>
@@ -575,8 +595,8 @@
     <!-- Property Area End Two -->
     --}}
     <!-- =======================
-                             Property Area Two (DROP-IN)
-                        ======================= -->
+                                 Property Area Two (DROP-IN)
+                            ======================= -->
     <div class="property-area-two pb-70">
         <div class="container">
             <!-- remove horizontal gap between the two columns -->
@@ -643,15 +663,15 @@
         }
 
         /* Optional: if you want a fixed, nicely cropped banner look, uncomment:
-                          .property-area-two .property-img-two.no-gap{
-                            aspect-ratio: 16/9;               // choose your ratio
-                            overflow: hidden;
-                          }
-                          .property-area-two .property-img-two.no-gap img{
-                            height: 100%;
-                            object-fit: cover;                // fills & crops
-                          }
-                          */
+                              .property-area-two .property-img-two.no-gap{
+                                aspect-ratio: 16/9;               // choose your ratio
+                                overflow: hidden;
+                              }
+                              .property-area-two .property-img-two.no-gap img{
+                                height: 100%;
+                                object-fit: cover;                // fills & crops
+                              }
+                              */
 
         /* Tighten the two columns visually on lg+ screens */
         @media (min-width: 992px) {
@@ -694,13 +714,13 @@
                     </li>
                 </ul>
                 <!-- 
-                                                                                                <div class="project-card-btn">
-                                                                                                    <a href="#" class="default-btn default-sante-fe">View Details <i
+                                                                                                    <div class="project-card-btn">
+                                                                                                        <a href="#" class="default-btn default-sante-fe">View Details <i
 
-                                                                                                            class='bx bx-right-arrow-alt'></i></a>
-                                                                                                    <a href={{ route('contact') }} class="default-btn default-dark-blue active">Download Brochure <i
-                                                                                                            class='bx bx-right-arrow-alt'></i></a>
-                                                                                                </div> -->
+                                                                                                                class='bx bx-right-arrow-alt'></i></a>
+                                                                                                        <a href={{ route('contact') }} class="default-btn default-dark-blue active">Download Brochure <i
+                                                                                                                class='bx bx-right-arrow-alt'></i></a>
+                                                                                                    </div> -->
             </div>
         </div>
     </div>
@@ -849,29 +869,29 @@
             // Define the data for each slide (your dynamic left info)
             var apartmentInfo = [
                 `<ul>
-                                                <li>STUDIO <span>01</span></li>
-                                                <li>DUPLEX <span>02</span></li>
-                                                <li>BATHROOM <span>03</span></li>
-                                                <li>BEDROOM <span>04</span></li>
-                                             </ul>`,
+                                                    <li>STUDIO <span>01</span></li>
+                                                    <li>DUPLEX <span>02</span></li>
+                                                    <li>BATHROOM <span>03</span></li>
+                                                    <li>BEDROOM <span>04</span></li>
+                                                 </ul>`,
                 `<ul>
-                                                <li>STUDIO <span>02</span></li>
-                                                <li>DUPLEX <span>03</span></li>
-                                                <li>BATHROOM <span>04</span></li>
-                                                <li>BEDROOM <span>05</span></li>
-                                             </ul>`,
+                                                    <li>STUDIO <span>02</span></li>
+                                                    <li>DUPLEX <span>03</span></li>
+                                                    <li>BATHROOM <span>04</span></li>
+                                                    <li>BEDROOM <span>05</span></li>
+                                                 </ul>`,
                 `<ul>
-                                                <li>STUDIO <span>03</span></li>
-                                                <li>DUPLEX <span>04</span></li>
-                                                <li>BATHROOM <span>05</span></li>
-                                                <li>BEDROOM <span>06</span></li>
-                                             </ul>`,
+                                                    <li>STUDIO <span>03</span></li>
+                                                    <li>DUPLEX <span>04</span></li>
+                                                    <li>BATHROOM <span>05</span></li>
+                                                    <li>BEDROOM <span>06</span></li>
+                                                 </ul>`,
                 `<ul>
-                                                <li>STUDIO <span>04</span></li>
-                                                <li>DUPLEX <span>05</span></li>
-                                                <li>BATHROOM <span>06</span></li>
-                                                <li>BEDROOM <span>07</span></li>
-                                             </ul>`
+                                                    <li>STUDIO <span>04</span></li>
+                                                    <li>DUPLEX <span>05</span></li>
+                                                    <li>BATHROOM <span>06</span></li>
+                                                    <li>BEDROOM <span>07</span></li>
+                                                 </ul>`
             ];
 
             // Initialize Owl Carousel
@@ -1101,8 +1121,8 @@
         }
 
         /* .offer-item-bg:hover i {
-                        color: #0E4F27;
-                    } */
+                            color: #0E4F27;
+                        } */
 
         .offer-item-bg.active {
             border-color: #0E4F27;
@@ -1216,57 +1236,57 @@
 
 
     <!-- Blog Area -->
-    <!-- <div class="blog-area-two pb-70">
-                                                                            <div class="container">
-                                                                                <div class="section-title-two text-center">
-                                                                                    <span class="section-span-bg">BLOG & NEWS</span>
-                                                                                    <h2 class="margin-auto">News & <b class="section-color">Updates</b></h2>
-                                                                                </div>
-                                                                                <div class="row pt-45">
-                                                                                    <div class="col-lg-4 col-md-6">
-                                                                                        <div class="blog-card">
-                                                                                            <a href="blog-details.html">
-                                                                                                <img src="assets/img/blog/1.jpg" alt="Blog Images">
-                                                                                            </a>
-                                                                                            <div class="content">
-                                                                                                <span>April 19, 2024 / <a href="#">Interior</a> </span>
-                                                                                                <a href="blog-details.html">
-                                                                                                    <h3>Real Estate Is Being Came In The Place Of Expectation</h3>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
+    <div class="blog-area-two pb-70">
+        <div class="container">
+            <div class="section-title-two text-center">
+                <span class="section-span-bg">News & Events</span>
+                <h2 class="margin-auto">News & <b class="section-color">Events</b></h2>
+            </div>
+            <div class="row pt-45">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <a href="#">
+                            <img src="assets/img/blog/1.jpg" alt="Blog Images">
+                        </a>
+                        <div class="content">
+                            <span>April 19, 2024 / <a href="#">Interior</a> </span>
+                            <a href="#">
+                                <h3>Real Estate Is Being Came In The Place Of Expectation</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                                                                                    <div class="col-lg-4 col-md-6">
-                                                                                        <div class="blog-card">
-                                                                                            <a href="blog-details.html">
-                                                                                                <img src="assets/img/blog/2.jpg" alt="Blog Images">
-                                                                                            </a>
-                                                                                            <div class="content">
-                                                                                                <span>March 19, 2024 / <a href="#">Home</a> </span>
-                                                                                                <a href="blog-details.html">
-                                                                                                    <h3>Luxury Property Is Might Be First Choose?</h3>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <a href="#">
+                            <img src="assets/img/blog/2.jpg" alt="Blog Images">
+                        </a>
+                        <div class="content">
+                            <span>March 19, 2024 / <a href="#">Home</a> </span>
+                            <a href="#">
+                                <h3>Luxury Property Is Might Be First Choose?</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                                                                                    <div class="col-lg-4 col-md-6  ">
-                                                                                        <div class="blog-card">
-                                                                                            <a href="blog-details.html">
-                                                                                                <img src="assets/img/blog/3.jpg" alt="Blog Images">
-                                                                                            </a>
-                                                                                            <div class="content">
-                                                                                                <span>January 15, 2024 / <a href="#">kitchen</a></span>
-                                                                                                <a href="blog-details.html">
-                                                                                                    <h3>How It Would Be In My List If I Don’t Know!</h3>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> -->
+                <div class="col-lg-4 col-md-6  ">
+                    <div class="blog-card">
+                        <a href="#">
+                            <img src="assets/img/blog/3.jpg" alt="Blog Images">
+                        </a>
+                        <div class="content">
+                            <span>January 15, 2024 / <a href="#">kitchen</a></span>
+                            <a href="#">
+                                <h3>How It Would Be In My List If I Don’t Know!</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Blog Area End -->
 
     {{--
@@ -1285,9 +1305,9 @@
                             <li>SUNNY SIDE <b>Available</b></li>
                         </ul>
                         <!-- <a href="#" class="default-btn default-sante-fe">
-                                                                                                            Visit Details
-                                                                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                                                                        </a> -->
+                                                                                                                Visit Details
+                                                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                                                            </a> -->
                     </div>
                 </div>
 
@@ -1330,9 +1350,9 @@
                             <li>PARKING <b>01</b></li>
                         </ul>
                         <!-- <a href="#" class="default-btn default-sante-fe">
-                                                                                                            Visit Details
-                                                                                                            <i class='bx bx-right-arrow-alt'></i>
-                                                                                                        </a> -->
+                                                                                                                Visit Details
+                                                                                                                <i class='bx bx-right-arrow-alt'></i>
+                                                                                                            </a> -->
                     </div>
                 </div>
 
@@ -1361,9 +1381,9 @@
                             </p>
                         </div>
                         <!-- <div class="innovation-btn">
-                                                                                                            <a href="#" class="default-btn default-bg-buttercup">View Details <i
-                                                                                                                    class='bx bx-right-arrow-alt'></i></a>
-                                                                                                        </div> -->
+                                                                                                                <a href="#" class="default-btn default-bg-buttercup">View Details <i
+                                                                                                                        class='bx bx-right-arrow-alt'></i></a>
+                                                                                                            </div> -->
                     </div>
                 </div>
 
@@ -1389,15 +1409,15 @@
                             </div>
 
                             <!-- <div class="innovation-item">
-                                                                                                <i class='flaticon-smartphone'></i>
-                                                                                                <h3>Quality Management</h3>
-                                                                                                <p>
-                                                                                                    Ensuring superior construction standards through precision, care, and a commitment to
-                                                                                                    lasting
-                                                                                                    excellence.
+                                                                                                    <i class='flaticon-smartphone'></i>
+                                                                                                    <h3>Quality Management</h3>
+                                                                                                    <p>
+                                                                                                        Ensuring superior construction standards through precision, care, and a commitment to
+                                                                                                        lasting
+                                                                                                        excellence.
 
-                                                                                                </p>
-                                                                                            </div> -->
+                                                                                                    </p>
+                                                                                                </div> -->
                         </div>
                     </div>
                 </div>
@@ -1460,105 +1480,165 @@
         </div>
     </section>
 
-    
+
     <!-- Owl CSS/JS (use your local assets if you already include them ONCE) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<style>
-/* Center the carousel block in its column */
-.clients-section .row > .col-lg-6:first-child{ display:flex; justify-content:center; }
+    <style>
+        /* Center the carousel block in its column */
+        .clients-section .row>.col-lg-6:first-child {
+            display: flex;
+            justify-content: center;
+        }
 
-/* Carousel width cap for nicer alignment on wide screens */
-.clients-carousel{ width:100%; max-width:520px; margin:0 auto; }
+        /* Carousel width cap for nicer alignment on wide screens */
+        .clients-carousel {
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto;
+        }
 
-/* Let Owl manage widths (no flex on stage/items) */
-.clients-carousel.owl-carousel{ width:100%; }
-.clients-carousel .owl-stage-outer{ overflow:hidden; }
-.clients-carousel .owl-stage{ display:block; }
-.clients-carousel .owl-item{ display:block; float:left; }
-.clients-carousel .owl-item > *{ width:100%; }
+        /* Let Owl manage widths (no flex on stage/items) */
+        .clients-carousel.owl-carousel {
+            width: 100%;
+        }
 
-/* Slide box with stable height */
-.clients-carousel .client-logo{
-  height:110px; display:flex; align-items:center; justify-content:center; padding:6px 10px;
-}
-@media (max-width:575.98px){ .clients-carousel .client-logo{ height:100px; } }
+        .clients-carousel .owl-stage-outer {
+            overflow: hidden;
+        }
 
-/* Images — ignore any inline width/height */
-.clients-carousel .client-logo img{
-  max-height:100%; max-width:100%; width:auto; height:auto; display:block;
-  filter:grayscale(100%); opacity:.85; transition:transform .3s, filter .3s, opacity .3s;
-}
-.clients-carousel .client-logo img[style]{
-  width:auto !important; height:auto !important; max-width:100% !important; max-height:100% !important;
-}
-.clients-carousel .client-logo img:hover{ filter:none; opacity:1; transform:scale(1.05); }
+        .clients-carousel .owl-stage {
+            display: block;
+        }
 
-/* Dots */
-.clients-carousel .owl-dots{ display:flex; justify-content:center; gap:8px; margin-top:10px; }
-.clients-carousel .owl-dot span{ width:8px; height:8px; display:inline-block; border-radius:50%; background:#e2e8f0; }
-.clients-carousel .owl-dot.active span{ background:#0E4F27; }
+        .clients-carousel .owl-item {
+            display: block;
+            float: left;
+        }
 
-</style>
+        .clients-carousel .owl-item>* {
+            width: 100%;
+        }
 
-<script>
-(function() {
-  // Ensure jQuery is present
-  if (!window.jQuery) return console.warn('jQuery not loaded');
-  var $ = jQuery, $c = $('.clients-carousel');
+        /* Slide box with stable height */
+        .clients-carousel .client-logo {
+            height: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 10px;
+        }
 
-  // Destroy if already initialized somewhere else
-  if ($c.hasClass('owl-loaded')) {
-    $c.trigger('destroy.owl.carousel');
-    $c.removeClass('owl-loaded');
-    $c.find('.owl-stage-outer').children().unwrap();
-  }
+        @media (max-width:575.98px) {
+            .clients-carousel .client-logo {
+                height: 100px;
+            }
+        }
 
-  // Wait for images to load to avoid tiny height "film strip"
-  function whenImagesReady($imgs, done){
-    var left = $imgs.length;
-    if (!left) return done();
-    $imgs.each(function(){
-      if (this.complete) { if (--left===0) done(); }
-      else $(this).one('load error', function(){ if (--left===0) done(); });
-    });
-  }
+        /* Images — ignore any inline width/height */
+        .clients-carousel .client-logo img {
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            filter: grayscale(100%);
+            opacity: .85;
+            transition: transform .3s, filter .3s, opacity .3s;
+        }
 
-  function initCarousel(){
-    if (typeof $.fn.owlCarousel !== 'function') {
-      console.warn('OwlCarousel not loaded');
-      return;
-    }
-    $c.owlCarousel({
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 2500,
-      autoplayHoverPause: true,
-      smartSpeed: 600,
-      dots: true,
-      nav: false,
-      margin: 24,
-      autoWidth: false,
-      autoHeight: true,
-      responsive: {
-        0:   { items: 1, margin: 12, center: true  }, // phone
-        576: { items: 2, margin: 16, center: false }, // tablet
-        992: { items: 3, margin: 24, center: false }  // desktop
-      },
-      onInitialized: function(){ setTimeout(function(){ $c.trigger('refresh.owl.carousel'); }, 50); }
-    });
-  }
+        .clients-carousel .client-logo img[style] {
+            width: auto !important;
+            height: auto !important;
+            max-width: 100% !important;
+            max-height: 100% !important;
+        }
 
-  // Start after page + images are ready
-  if (document.readyState === 'complete') {
-    whenImagesReady($c.find('img'), initCarousel);
-  } else {
-    $(window).on('load', function(){ whenImagesReady($c.find('img'), initCarousel); });
-  }
-})();
-</script>
+        .clients-carousel .client-logo img:hover {
+            filter: none;
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        /* Dots */
+        .clients-carousel .owl-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .clients-carousel .owl-dot span {
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 50%;
+            background: #e2e8f0;
+        }
+
+        .clients-carousel .owl-dot.active span {
+            background: #0E4F27;
+        }
+    </style>
+
+    <script>
+        (function () {
+            // Ensure jQuery is present
+            if (!window.jQuery) return console.warn('jQuery not loaded');
+            var $ = jQuery, $c = $('.clients-carousel');
+
+            // Destroy if already initialized somewhere else
+            if ($c.hasClass('owl-loaded')) {
+                $c.trigger('destroy.owl.carousel');
+                $c.removeClass('owl-loaded');
+                $c.find('.owl-stage-outer').children().unwrap();
+            }
+
+            // Wait for images to load to avoid tiny height "film strip"
+            function whenImagesReady($imgs, done) {
+                var left = $imgs.length;
+                if (!left) return done();
+                $imgs.each(function () {
+                    if (this.complete) { if (--left === 0) done(); }
+                    else $(this).one('load error', function () { if (--left === 0) done(); });
+                });
+            }
+
+            function initCarousel() {
+                if (typeof $.fn.owlCarousel !== 'function') {
+                    console.warn('OwlCarousel not loaded');
+                    return;
+                }
+                $c.owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2500,
+                    autoplayHoverPause: true,
+                    smartSpeed: 600,
+                    dots: true,
+                    nav: false,
+                    margin: 24,
+                    autoWidth: false,
+                    autoHeight: true,
+                    responsive: {
+                        0: { items: 1, margin: 12, center: true }, // phone
+                        576: { items: 2, margin: 16, center: false }, // tablet
+                        992: { items: 3, margin: 24, center: false }  // desktop
+                    },
+                    onInitialized: function () { setTimeout(function () { $c.trigger('refresh.owl.carousel'); }, 50); }
+                });
+            }
+
+            // Start after page + images are ready
+            if (document.readyState === 'complete') {
+                whenImagesReady($c.find('img'), initCarousel);
+            } else {
+                $(window).on('load', function () { whenImagesReady($c.find('img'), initCarousel); });
+            }
+        })();
+    </script>
 
 
 
@@ -1935,29 +2015,28 @@
 
 
     <style>
-/* Base (desktop) size set somewhere above) */
-/* ... */
+        /* Base (desktop) size set somewhere above) */
+        /* ... */
 
-/* ≤ 992px */
-@media (max-width: 992px) {
-  .room-details-tab .tabs > li > a {
-    font-size: 16px !important;
-  }
-}
+        /* ≤ 992px */
+        @media (max-width: 992px) {
+            .room-details-tab .tabs>li>a {
+                font-size: 16px !important;
+            }
+        }
 
-/* ≤ 576px */
-@media (max-width: 576px) {
-  .room-details-tab .tabs > li > a {
-    font-size: 14px !important;
-  }
-}
-@media (max-width: 320px) {
-  .room-details-tab .tabs > li > a {
-    font-size: 10px !important;
-  }
-}
+        /* ≤ 576px */
+        @media (max-width: 576px) {
+            .room-details-tab .tabs>li>a {
+                font-size: 14px !important;
+            }
+        }
 
-
+        @media (max-width: 320px) {
+            .room-details-tab .tabs>li>a {
+                font-size: 10px !important;
+            }
+        }
     </style>
     <!-- Room Details Area End -->
 
@@ -1969,274 +2048,281 @@
 
 
 
-<!-- =======================
-     Client Reviews / Testimonials
-======================== -->
-<section class="review-section pt-100 pb-70">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7 text-center">
-                <div class="section-title-two">
-                    <span class="section-span-bg">CLIENT REVIEWS</span>
-                    <h2>What People Say <b class="section-color">About ASHARA</b></h2>
-                    <p class="mt-2">
-                        Honest feedback from clients who trusted us with their homes and investments.
+    <!-- =======================
+         Client Reviews / Testimonials
+    ======================== -->
+    <section class="review-section pt-100 pb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="section-title-two">
+                        <span class="section-span-bg">CLIENT REVIEWS</span>
+                        <h2>What People Say <b class="section-color">About ASHARA</b></h2>
+                        <p class="mt-2">
+                            Honest feedback from clients who trusted us with their homes and investments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-slider owl-carousel owl-theme pt-45">
+
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-top">
+                        <div class="review-avatar">
+                            <img src="{{ asset('assets/img/user/1.jpg') }}" alt="Client">
+                        </div>
+                        <div class="review-meta">
+                            <h4>Mahmud Hasan</h4>
+                            <span>Apartment Owner</span>
+                        </div>
+                        <div class="review-quote">
+                            <i class='bx bxs-quote-alt-right'></i>
+                        </div>
+                    </div>
+
+                    <div class="review-stars" aria-label="5 star rating">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                            class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+
+                    <p class="review-text">
+                        The handover was on time and the finishing quality is excellent. Their team was responsive and
+                        transparent throughout.
                     </p>
                 </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-top">
+                        <div class="review-avatar">
+                            <img src="{{ asset('assets/img/user/2.jpg') }}" alt="Client">
+                        </div>
+                        <div class="review-meta">
+                            <h4>Nusrat Jahan</h4>
+                            <span>Commercial Client</span>
+                        </div>
+                        <div class="review-quote">
+                            <i class='bx bxs-quote-alt-right'></i>
+                        </div>
+                    </div>
+
+                    <div class="review-stars" aria-label="4 star rating">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                            class='bx bxs-star'></i><i class='bx bx-star'></i>
+                    </div>
+
+                    <p class="review-text">
+                        Great planning and project management. We felt confident because the updates were regular and clear.
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-top">
+                        <div class="review-avatar">
+                            <img src="{{ asset('assets/img/user/3.jpg') }}" alt="Client">
+                        </div>
+                        <div class="review-meta">
+                            <h4>Imran Kabir</h4>
+                            <span>Investor</span>
+                        </div>
+                        <div class="review-quote">
+                            <i class='bx bxs-quote-alt-right'></i>
+                        </div>
+                    </div>
+
+                    <div class="review-stars" aria-label="5 star rating">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                            class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+
+                    <p class="review-text">
+                        Professional service and very strong after-sales support. Highly recommended for modern property
+                        solutions.
+                    </p>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card">
+                    <div class="review-top">
+                        <div class="review-avatar">
+                            <img src="{{ asset('assets/img/user/4.jpg') }}" alt="Client">
+                        </div>
+                        <div class="review-meta">
+                            <h4>Shamima Akter</h4>
+                            <span>Home Buyer</span>
+                        </div>
+                        <div class="review-quote">
+                            <i class='bx bxs-quote-alt-right'></i>
+                        </div>
+                    </div>
+
+                    <div class="review-stars" aria-label="5 star rating">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                            class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+
+                    <p class="review-text">
+                        Loved the design and the ventilation. They listened to our needs and guided us properly from day
+                        one.
+                    </p>
+                </div>
+
             </div>
         </div>
+    </section>
+    <style>
+        /* Center the whole heading block */
+        .review-section .section-title-two {
+            text-align: center !important;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-        <div class="review-slider owl-carousel owl-theme pt-45">
+        /* Make the top small label truly centered */
+        .review-section .section-title-two .section-span-bg {
+            display: inline-block;
+            margin: 0 auto 10px;
+        }
 
-            <!-- Review 1 -->
-            <div class="review-card">
-                <div class="review-top">
-                    <div class="review-avatar">
-                        <img src="{{ asset('assets/img/user/1.jpg') }}" alt="Client">
-                    </div>
-                    <div class="review-meta">
-                        <h4>Mahmud Hasan</h4>
-                        <span>Apartment Owner</span>
-                    </div>
-                    <div class="review-quote">
-                        <i class='bx bxs-quote-alt-right'></i>
-                    </div>
-                </div>
+        /* Center the main title + keep it in the middle */
+        .review-section .section-title-two h2 {
+            margin: 0 auto !important;
+            max-width: 900px;
+            /* optional: keeps it nicely centered on wide screens */
+        }
 
-                <div class="review-stars" aria-label="5 star rating">
-                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                </div>
+        /* Center the description text too */
+        .review-section .section-title-two p {
+            margin: 12px auto 0 !important;
+            max-width: 650px;
+        }
 
-                <p class="review-text">
-                    The handover was on time and the finishing quality is excellent. Their team was responsive and transparent throughout.
-                </p>
-            </div>
+        .review-section {
+            background: #fbf3e9;
+        }
 
-            <!-- Review 2 -->
-            <div class="review-card">
-                <div class="review-top">
-                    <div class="review-avatar">
-                        <img src="{{ asset('assets/img/user/2.jpg') }}" alt="Client">
-                    </div>
-                    <div class="review-meta">
-                        <h4>Nusrat Jahan</h4>
-                        <span>Commercial Client</span>
-                    </div>
-                    <div class="review-quote">
-                        <i class='bx bxs-quote-alt-right'></i>
-                    </div>
-                </div>
+        .review-slider .review-card {
+            background: #fff;
+            border: 1px solid rgba(14, 79, 39, .12);
+            border-radius: 14px;
+            padding: 26px 22px;
+            transition: .25s;
+            box-shadow: 0 10px 26px rgba(0, 0, 0, .05);
+            min-height: 260px;
+        }
 
-                <div class="review-stars" aria-label="4 star rating">
-                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i>
-                </div>
+        .review-slider .review-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(14, 79, 39, .25);
+        }
 
-                <p class="review-text">
-                    Great planning and project management. We felt confident because the updates were regular and clear.
-                </p>
-            </div>
+        .review-top {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            position: relative;
+            margin-bottom: 12px;
+        }
 
-            <!-- Review 3 -->
-            <div class="review-card">
-                <div class="review-top">
-                    <div class="review-avatar">
-                        <img src="{{ asset('assets/img/user/3.jpg') }}" alt="Client">
-                    </div>
-                    <div class="review-meta">
-                        <h4>Imran Kabir</h4>
-                        <span>Investor</span>
-                    </div>
-                    <div class="review-quote">
-                        <i class='bx bxs-quote-alt-right'></i>
-                    </div>
-                </div>
+        .review-avatar {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #FFB400;
+            flex: 0 0 auto;
+        }
 
-                <div class="review-stars" aria-label="5 star rating">
-                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                </div>
+        .review-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
 
-                <p class="review-text">
-                    Professional service and very strong after-sales support. Highly recommended for modern property solutions.
-                </p>
-            </div>
+        .review-meta h4 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 800;
+            color: #0E4F27;
+        }
 
-            <!-- Review 4 -->
-            <div class="review-card">
-                <div class="review-top">
-                    <div class="review-avatar">
-                        <img src="{{ asset('assets/img/user/4.jpg') }}" alt="Client">
-                    </div>
-                    <div class="review-meta">
-                        <h4>Shamima Akter</h4>
-                        <span>Home Buyer</span>
-                    </div>
-                    <div class="review-quote">
-                        <i class='bx bxs-quote-alt-right'></i>
-                    </div>
-                </div>
+        .review-meta span {
+            font-size: 13px;
+            color: #666;
+            display: inline-block;
+            margin-top: 2px;
+        }
 
-                <div class="review-stars" aria-label="5 star rating">
-                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                </div>
+        .review-quote {
+            margin-left: auto;
+            font-size: 34px;
+            color: rgba(14, 79, 39, .18);
+        }
 
-                <p class="review-text">
-                    Loved the design and the ventilation. They listened to our needs and guided us properly from day one.
-                </p>
-            </div>
+        .review-stars {
+            display: flex;
+            gap: 2px;
+            margin: 10px 0 12px;
+            color: #FFB400;
+            font-size: 18px;
+        }
 
-        </div>
-    </div>
-</section>
-<style>
-    /* Center the whole heading block */
-.review-section .section-title-two{
-  text-align: center !important;
-  margin-left: auto;
-  margin-right: auto;
-}
+        .review-text {
+            margin: 0;
+            color: #555;
+            line-height: 1.7;
+            font-size: 15px;
+        }
 
-/* Make the top small label truly centered */
-.review-section .section-title-two .section-span-bg{
-  display: inline-block;
-  margin: 0 auto 10px;
-}
+        .review-slider.owl-theme .owl-dots {
+            margin-top: 18px;
+        }
 
-/* Center the main title + keep it in the middle */
-.review-section .section-title-two h2{
-  margin: 0 auto !important;
-  max-width: 900px;           /* optional: keeps it nicely centered on wide screens */
-}
+        .review-slider.owl-theme .owl-dots .owl-dot span {
+            width: 9px;
+            height: 9px;
+        }
 
-/* Center the description text too */
-.review-section .section-title-two p{
-  margin: 12px auto 0 !important;
-  max-width: 650px;
-}
+        .review-slider.owl-theme .owl-dots .owl-dot.active span {
+            background: #0E4F27;
+        }
+    </style>
 
-    .review-section{
-  background: #fbf3e9;
-}
+    <script>
+        $(function () {
+            var $r = $('.review-slider');
 
-.review-slider .review-card{
-  background: #fff;
-  border: 1px solid rgba(14,79,39,.12);
-  border-radius: 14px;
-  padding: 26px 22px;
-  transition: .25s;
-  box-shadow: 0 10px 26px rgba(0,0,0,.05);
-  min-height: 260px;
-}
+            if ($r.length) {
+                if ($r.hasClass('owl-loaded')) {
+                    $r.trigger('destroy.owl.carousel');
+                    $r.removeClass('owl-loaded');
+                    $r.find('.owl-stage-outer').children().unwrap();
+                }
 
-.review-slider .review-card:hover{
-  transform: translateY(-6px);
-  border-color: rgba(14,79,39,.25);
-}
+                $r.owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 3500,
+                    autoplayHoverPause: true,
+                    smartSpeed: 650,
+                    margin: 18,
+                    nav: false,
+                    dots: true,
+                    responsive: {
+                        0: { items: 1 },
+                        576: { items: 1 },
+                        768: { items: 2 },
+                        992: { items: 3 }
+                    }
+                });
+            }
+        });
 
-.review-top{
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  position: relative;
-  margin-bottom: 12px;
-}
-
-.review-avatar{
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid #FFB400;
-  flex: 0 0 auto;
-}
-
-.review-avatar img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.review-meta h4{
-  margin: 0;
-  font-size: 18px;
-  font-weight: 800;
-  color: #0E4F27;
-}
-
-.review-meta span{
-  font-size: 13px;
-  color: #666;
-  display: inline-block;
-  margin-top: 2px;
-}
-
-.review-quote{
-  margin-left: auto;
-  font-size: 34px;
-  color: rgba(14,79,39,.18);
-}
-
-.review-stars{
-  display: flex;
-  gap: 2px;
-  margin: 10px 0 12px;
-  color: #FFB400;
-  font-size: 18px;
-}
-
-.review-text{
-  margin: 0;
-  color: #555;
-  line-height: 1.7;
-  font-size: 15px;
-}
-
-.review-slider.owl-theme .owl-dots{
-  margin-top: 18px;
-}
-
-.review-slider.owl-theme .owl-dots .owl-dot span{
-  width: 9px;
-  height: 9px;
-}
-
-.review-slider.owl-theme .owl-dots .owl-dot.active span{
-  background: #0E4F27;
-}
-
-</style>
-
-<script>
-    $(function () {
-  var $r = $('.review-slider');
-
-  if ($r.length) {
-    if ($r.hasClass('owl-loaded')) {
-      $r.trigger('destroy.owl.carousel');
-      $r.removeClass('owl-loaded');
-      $r.find('.owl-stage-outer').children().unwrap();
-    }
-
-    $r.owlCarousel({
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 3500,
-      autoplayHoverPause: true,
-      smartSpeed: 650,
-      margin: 18,
-      nav: false,
-      dots: true,
-      responsive: {
-        0: { items: 1 },
-        576: { items: 1 },
-        768: { items: 2 },
-        992: { items: 3 }
-      }
-    });
-  }
-});
-
-</script>
+    </script>
 
 
 
@@ -2259,45 +2345,45 @@
 
     <!-- newsletter Area -->
     <!-- <div class="newsletter-area pt-100 pb-70" style="background-color: #fff;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="newsletter-content">
-                        <i class='flaticon-email'></i>
-                        <h2>Join our weekly <b class="section-color">Newsletter</b></h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="newsletter-content">
+                            <i class='flaticon-email'></i>
+                            <h2>Join our weekly <b class="section-color">Newsletter</b></h2>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-5">
-                    <div class="newsletter-form-area">
-                        <form class="newsletter-form" data-toggle="validator" method="POST">
-                            <input type="email" class="form-control" placeholder="Your Email*" name="EMAIL" required
-                                autocomplete="off">
-                            <button class="default-btn default-sante-fe" type="submit">
-                                Subscribe
-                                <i class='bx bx-right-arrow-alt'></i>
-                            </button>
-                            <div id="validator-newsletter" class="form-result"></div>
-                        </form>
+                    <div class="col-lg-5">
+                        <div class="newsletter-form-area">
+                            <form class="newsletter-form" data-toggle="validator" method="POST">
+                                <input type="email" class="form-control" placeholder="Your Email*" name="EMAIL" required
+                                    autocomplete="off">
+                                <button class="default-btn default-sante-fe" type="submit">
+                                    Subscribe
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </button>
+                                <div id="validator-newsletter" class="form-result"></div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <style>
-        /* Newsletter input black border */
-.newsletter-area .newsletter-form .form-control{
-  border: 1px solid #000 !important;
-  box-shadow: none !important;
-}
+        <style>
+            /* Newsletter input black border */
+    .newsletter-area .newsletter-form .form-control{
+      border: 1px solid #000 !important;
+      box-shadow: none !important;
+    }
 
-/* Optional: keep border black on focus too */
-.newsletter-area .newsletter-form .form-control:focus{
-  border-color: #000 !important;
-  box-shadow: none !important;
-}
+    /* Optional: keep border black on focus too */
+    .newsletter-area .newsletter-form .form-control:focus{
+      border-color: #000 !important;
+      box-shadow: none !important;
+    }
 
-    </style> -->
+        </style> -->
     <!-- newsletter Area End -->
 
 

@@ -38,40 +38,40 @@
         }
 
         $msg1 = normalizeMessage(<<<'TEXT'
-        Dear Patrons:
-        As-Salamu-Alaikum-Wa-Rahmatullah!
-        By the grace of Almighty Allah, ASARA Properties had been established in January of the year 2018 with a view of “Comfort & Safety” in the construction of “Luxurious & Quality” residential apartments and Commercial spaces in various prime location of Dhaka city. In today’s day and age, a number of companies have engaged themselves in the real estate sector for the mitigation of housing accommodation.
-        ASARA Properties consists of a highly qualified, experienced, dynamic and inspired management team of Engineers, Architects, Marketing and other professionals.
-        We hope that you will continue to support us in all our future Endeavor with your inputs. We value your views immensely for the successful building of our country’s real sector.
-        We wish all of success to our clients and well-wishers.
-        TEXT);
+                Dear Patrons:
+                As-Salamu-Alaikum-Wa-Rahmatullah!
+                By the grace of Almighty Allah, ASARA Properties had been established in January of the year 2018 with a view of “Comfort & Safety” in the construction of “Luxurious & Quality” residential apartments and Commercial spaces in various prime location of Dhaka city. In today’s day and age, a number of companies have engaged themselves in the real estate sector for the mitigation of housing accommodation.
+                ASARA Properties consists of a highly qualified, experienced, dynamic and inspired management team of Engineers, Architects, Marketing and other professionals.
+                We hope that you will continue to support us in all our future Endeavor with your inputs. We value your views immensely for the successful building of our country’s real sector.
+                We wish all of success to our clients and well-wishers.
+                TEXT);
 
         $msg2 = normalizeMessage(<<<'TEXT'
-        Dear Well-Wishers.
-        As-Salamu-Alaikum-Wa-Rahmatullah!
-        By the grace of Almighty Allah, ASARA Properties had been established in January of the year 2018 with a view of “Comfort & Safety” in the construction of “Luxurious & Quality” residential apartments and Commercial spaces in various prime location of Dhaka city. In today’s day and age, a number of companies have engaged themselves in the real estate sector for the mitigation of housing accommodation.
-        ASARA Properties has a royal plan to introduce innovative ideas to represent building, comprising of all modern facilities for the comfort of clients.
-        Our aim is to develop quality housing & commercial properties with high standards at reasonable prices, to achieve customer contentment to respect and comply with Safety, Environmental and legal requirements.
-        We plan to build a “Smart Town” in the near future for the “Middle class earning Citizens” of Bangladesh.
-        We at O.K. Properties are loyal to endow the the best real estate investment opportunities, which convene customer expectation through creativity, continual development, professionalism, sincerity and reliability.
-        TEXT);
+                Dear Well-Wishers.
+                As-Salamu-Alaikum-Wa-Rahmatullah!
+                By the grace of Almighty Allah, ASARA Properties had been established in January of the year 2018 with a view of “Comfort & Safety” in the construction of “Luxurious & Quality” residential apartments and Commercial spaces in various prime location of Dhaka city. In today’s day and age, a number of companies have engaged themselves in the real estate sector for the mitigation of housing accommodation.
+                ASARA Properties has a royal plan to introduce innovative ideas to represent building, comprising of all modern facilities for the comfort of clients.
+                Our aim is to develop quality housing & commercial properties with high standards at reasonable prices, to achieve customer contentment to respect and comply with Safety, Environmental and legal requirements.
+                We plan to build a “Smart Town” in the near future for the “Middle class earning Citizens” of Bangladesh.
+                We at O.K. Properties are loyal to endow the the best real estate investment opportunities, which convene customer expectation through creativity, continual development, professionalism, sincerity and reliability.
+                TEXT);
 
         $msg3 = normalizeMessage(<<<'TEXT'
-        Dear Concern:
-        As-Salamu-Alaikum-Wa-Rahmatullah!
-        By the grace of Almighty Allah, Asara Properties. had been established in the year of 2018. It is our great pleasure to inform you that Asara Properties. is a remarkable Real Estate and construction developer company in Bangladesh. The company has promised to deliver a high standard of construction and services for its valued customers with better business norms and ethics.
-        We have own architectural and engineering design team who are competent to make flexible and readily adjustable to any design as per demand of our clients. Our technical team comprises of highly qualified architects, engineers and skilled workers who are create comprehensive experience in design, Fabrication, Erection of any construction works.
-        We are committed to provide world class quality services as well as best quality and making. We can assure that our services will be attractive, durable and energy-efficient.
-        TEXT);
+                Dear Concern:
+                As-Salamu-Alaikum-Wa-Rahmatullah!
+                By the grace of Almighty Allah, Asara Properties. had been established in the year of 2018. It is our great pleasure to inform you that Asara Properties. is a remarkable Real Estate and construction developer company in Bangladesh. The company has promised to deliver a high standard of construction and services for its valued customers with better business norms and ethics.
+                We have own architectural and engineering design team who are competent to make flexible and readily adjustable to any design as per demand of our clients. Our technical team comprises of highly qualified architects, engineers and skilled workers who are create comprehensive experience in design, Fabrication, Erection of any construction works.
+                We are committed to provide world class quality services as well as best quality and making. We can assure that our services will be attractive, durable and energy-efficient.
+                TEXT);
 
         $msg4 = normalizeMessage(<<<'TEXT'
-        Dear Concern:
-        As-Salamu-Alaikum-Wa-Rahmatullah!
-        By the grace of Almighty Allah, Asara Properties. had been established in the year of 2018. It is our great pleasure to inform you that Asara Properties. is a remarkable Real Estate and construction developer company in Bangladesh. The company has promised to deliver a high standard of construction and services for its valued customers with better business norms and ethics.
-        Asara Properties is committed to build long-term relationships based on integrity, performance, value, and client satisfaction. We will continue to meet the changing needs of the government's various organizations with our quality services delivered by the most qualified people.
+                Dear Concern:
+                As-Salamu-Alaikum-Wa-Rahmatullah!
+                By the grace of Almighty Allah, Asara Properties. had been established in the year of 2018. It is our great pleasure to inform you that Asara Properties. is a remarkable Real Estate and construction developer company in Bangladesh. The company has promised to deliver a high standard of construction and services for its valued customers with better business norms and ethics.
+                Asara Properties is committed to build long-term relationships based on integrity, performance, value, and client satisfaction. We will continue to meet the changing needs of the government's various organizations with our quality services delivered by the most qualified people.
 
-        Quality in all our work is the key. We work in close relation with clients, service providers and architects to obtain optimal team work and efficiency by which to become a legend construction company.
-        TEXT);
+                Quality in all our work is the key. We work in close relation with clients, service providers and architects to obtain optimal team work and efficiency by which to become a legend construction company.
+                TEXT);
     @endphp
 
     <section class="forward-area forward-area-mt leadership-area">
@@ -93,7 +93,7 @@
 
                             <div class="leadership-content">
                                 <div class="section-title">
-                                    
+
                                     <h3>Syed Akbar Kabir</h3>
                                     <small>Chairman, ASARA Properties</small>
 
@@ -101,8 +101,8 @@
                                 </div>
 
                                 <!-- <a href="{{ route('contact') }}" class="default-btn default-bg-buttercup">
-                                    Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
-                                </a> -->
+                                        Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
+                                    </a> -->
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
 
                             <div class="leadership-content">
                                 <div class="section-title">
-                                    
+
                                     <h3>KM Zahirul Ameen</h3>
                                     <small>Managing Partner & CEO, ASARA Properties</small>
 
@@ -124,8 +124,8 @@
                                 </div>
 
                                 <!-- <a href="{{ route('contact') }}" class="default-btn default-bg-buttercup">
-                                    Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
-                                </a> -->
+                                        Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
+                                    </a> -->
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
 
                             <div class="leadership-content">
                                 <div class="section-title">
-                                    
+
                                     <h3>Md Soebul Islam Roman</h3>
                                     <small>Director- Finance & Administration, ASARA Properties</small>
 
@@ -147,8 +147,8 @@
                                 </div>
 
                                 <!-- <a href="{{ route('contact') }}" class="default-btn default-bg-buttercup">
-                                    Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
-                                </a> -->
+                                        Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
+                                    </a> -->
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
 
                             <div class="leadership-content">
                                 <div class="section-title">
-                                    
+
                                     <h3>Md Aminul Islam</h3>
                                     <small>Director- Sales, ASARA Properties</small>
 
@@ -170,8 +170,8 @@
                                 </div>
 
                                 <!-- <a href="{{ route('contact') }}" class="default-btn default-bg-buttercup">
-                                    Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
-                                </a> -->
+                                        Finalize Meeting <i class='bx bx-right-arrow-alt'></i>
+                                    </a> -->
                             </div>
                         </div>
                     </div>
@@ -373,56 +373,56 @@
 
     <!-- Forward Area -->
     <!-- <div class="forward-area forward-area-mt ">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6">
-                    <div class="forward-img">
-                        <img src="assets/img/2.jpg" alt="Images">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="forward-img">
+                            <img src="assets/img/2.jpg" alt="Images">
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-6">
-                    <div class="forward-content">
-                        <div class="section-title">
-                            <span>Message FRom Company</span>
-                            <h2>Go Forward With <b>Us</b></h2>
-                            <p>
-                                At ASARA Properties, we believe in shaping not just buildings but better lifestyles. Our
-                                journey is defined
-                                by integrity, innovation, and dedication to excellence. Every project we undertake is built
-                                on the
-                                foundation of trust, quality, and value — ensuring your investment is secure and your living
-                                experience
-                                truly rewarding.
-                                We move forward with a vision to redefine modern housing through design, comfort, and
-                                sustainability
-                                — creating homes where memories thrive and futures begin.
+                    <div class="col-lg-6">
+                        <div class="forward-content">
+                            <div class="section-title">
+                                <span>Message FRom Company</span>
+                                <h2>Go Forward With <b>Us</b></h2>
+                                <p>
+                                    At ASARA Properties, we believe in shaping not just buildings but better lifestyles. Our
+                                    journey is defined
+                                    by integrity, innovation, and dedication to excellence. Every project we undertake is built
+                                    on the
+                                    foundation of trust, quality, and value — ensuring your investment is secure and your living
+                                    experience
+                                    truly rewarding.
+                                    We move forward with a vision to redefine modern housing through design, comfort, and
+                                    sustainability
+                                    — creating homes where memories thrive and futures begin.
 
-                            </p>
+                                </p>
+                            </div>
+
+                            <div class="signature">
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/signature.png" class="signature-img1" alt="Images">
+                                        <img src="assets/img/signature2.png" class="signature-img2" alt="Images">
+                                    </li>
+                                    <li>
+                                        <h3>ABC</h3>
+                                        <span>Company Owner</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a href={{ route(name: 'contact') }} class="default-btn default-bg-buttercup">
+                                Finalize Meeting
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
                         </div>
-
-                        <div class="signature">
-                            <ul>
-                                <li>
-                                    <img src="assets/img/signature.png" class="signature-img1" alt="Images">
-                                    <img src="assets/img/signature2.png" class="signature-img2" alt="Images">
-                                </li>
-                                <li>
-                                    <h3>ABC</h3>
-                                    <span>Company Owner</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <a href={{ route(name: 'contact') }} class="default-btn default-bg-buttercup">
-                            Finalize Meeting
-                            <i class='bx bx-right-arrow-alt'></i>
-                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div> -->
+        </div> -->
     <!-- Forward Area End -->
 
     <!-- About Area -->
@@ -554,193 +554,407 @@
     <!-- Core Values Area End -->
 
 
+
+
+
+
+
+
+
+    <!-- Team Area -->
     <!-- Team Area -->
     <div class="team-area pt-100 pb-70">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-sm-12 col-md-12">
+            <div class="row align-items-center">
+
+                <!-- Left content -->
+                <div class="col-lg-4 col-md-12">
                     <div class="team-content">
                         <div class="section-title-two">
                             <span class="section-span-bg2">TEAM MEMBERS</span>
                             <h2>We Are Pleased To <b class="section-color2">Meet You</b></h2>
                             <a href="#" class="team-btn">
-                                Meet Our Team
-                                <i class='bx bx-right-arrow-alt'></i>
+                                Meet Our Team <i class='bx bx-right-arrow-alt'></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6 col-md-6">
-                    <div class="team-card active">
-                        <a href="team.html">
-                            <img src="assets/img/team/1.jpg" alt="Images">
-                        </a>
-                        <div class="content">
-                            <a href="team.html">
-                                <h3>JORDHAN LEON</h3>
-                                <span>Company Owner</span>
-                                <ul class="social-link">
-                                    <li>
-                                        <a href="https://www.facebook.com/login/" target="_blank"><i
-                                                class='bx bxl-facebook'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/i/flow/login" target="_blank"><i
-                                                class='bx bxl-twitter'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
-                                                class='bx bxl-instagram'></i></a>
-                                    </li>
-                                </ul>
-                            </a>
+                <!-- Slider -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="swiper teamSwiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="team-card active">
+                                    <a href="team.html"><img src="assets/img/team/1.jpg" alt="Images"></a>
+                                    <div class="content">
+                                        <a href="team.html">
+                                            <h3>JORDHAN LEON</h3>
+                                            <span>Company Owner</span>
+                                        </a>
+                                        <ul class="social-link">
+                                            <li><a href="https://www.facebook.com/login/" target="_blank"><i
+                                                        class='bx bxl-facebook'></i></a></li>
+                                            <li><a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                        class='bx bxl-twitter'></i></a></li>
+                                            <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                        class='bx bxl-instagram'></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="team-card">
+                                    <a href="team.html"><img src="assets/img/team/2.jpg" alt="Images"></a>
+                                    <div class="content">
+                                        <a href="team.html">
+                                            <h3>DEVIT KILLER</h3>
+                                            <span>Sales Manager</span>
+                                        </a>
+                                        <ul class="social-link">
+                                            <li><a href="https://www.facebook.com/login/" target="_blank"><i
+                                                        class='bx bxl-facebook'></i></a></li>
+                                            <li><a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                        class='bx bxl-twitter'></i></a></li>
+                                            <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                        class='bx bxl-instagram'></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="team-card">
+                                    <a href="team.html"><img src="assets/img/team/3.jpg" alt="Images"></a>
+                                    <div class="content">
+                                        <a href="team.html">
+                                            <h3>MORAH JEIN</h3>
+                                            <span>Manager</span>
+                                        </a>
+                                        <ul class="social-link">
+                                            <li><a href="https://www.facebook.com/login/" target="_blank"><i
+                                                        class='bx bxl-facebook'></i></a></li>
+                                            <li><a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                        class='bx bxl-twitter'></i></a></li>
+                                            <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                        class='bx bxl-instagram'></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="team-card active">
+                                    <a href="team.html"><img src="assets/img/team/4.jpg" alt="Images"></a>
+                                    <div class="content">
+                                        <a href="team.html">
+                                            <h3>KILIN WARD</h3>
+                                            <span>Head of Optop</span>
+                                        </a>
+                                        <ul class="social-link">
+                                            <li><a href="https://www.facebook.com/login/" target="_blank"><i
+                                                        class='bx bxl-facebook'></i></a></li>
+                                            <li><a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                        class='bx bxl-twitter'></i></a></li>
+                                            <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                        class='bx bxl-instagram'></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide">
+                                <div class="team-card">
+                                    <a href="team.html"><img src="assets/img/team/5.jpg" alt="Images"></a>
+                                    <div class="content">
+                                        <a href="team.html">
+                                            <h3>ENDON JEMS</h3>
+                                            <span>Special Support</span>
+                                        </a>
+                                        <ul class="social-link">
+                                            <li><a href="https://www.facebook.com/login/" target="_blank"><i
+                                                        class='bx bxl-facebook'></i></a></li>
+                                            <li><a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                        class='bx bxl-twitter'></i></a></li>
+                                            <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                        class='bx bxl-instagram'></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 6 -->
+                            <div class="swiper-slide">
+                                <div class="team-card">
+                                    <a href="team.html"><img src="assets/img/team/6.jpg" alt="Images"></a>
+                                    <div class="content">
+                                        <a href="team.html">
+                                            <h3>LIAM WARD</h3>
+                                            <span>Product Manager</span>
+                                        </a>
+                                        <ul class="social-link">
+                                            <li><a href="https://www.facebook.com/login/" target="_blank"><i
+                                                        class='bx bxl-facebook'></i></a></li>
+                                            <li><a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                        class='bx bxl-twitter'></i></a></li>
+                                            <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                        class='bx bxl-instagram'></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
+                        <!-- Controls -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6 col-md-6">
-                    <div class="team-card">
-                        <a href="team.html">
-                            <img src="assets/img/team/2.jpg" alt="Images">
-                        </a>
-                        <div class="content">
-                            <a href="team.html">
-                                <h3>DEVIT KILLER</h3>
-                                <span>Sales Manager</span>
-                                <ul class="social-link">
-                                    <li>
-                                        <a href="https://www.facebook.com/login/" target="_blank"><i
-                                                class='bx bxl-facebook'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/i/flow/login" target="_blank"><i
-                                                class='bx bxl-twitter'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
-                                                class='bx bxl-instagram'></i></a>
-                                    </li>
-                                </ul>
-                            </a>
+            </div>
+        </div>
+    </div>
+    <!-- Team Area End -->
+<style>
+    .teamSwiper { width: 100%; padding: 10px 0 45px; }
+.teamSwiper .swiper-slide { height: auto; }
+.teamSwiper .team-card { height: 100%; }
+
+.teamSwiper .swiper-button-prev,
+.teamSwiper .swiper-button-next {
+  width: 42px;
+  height: 42px;
+}
+
+.teamSwiper .swiper-button-prev:after,
+.teamSwiper .swiper-button-next:after {
+  font-size: 16px;
+}
+
+</style>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  new Swiper(".teamSwiper", {
+    loop: true,
+    spaceBetween: 25,
+    grabCursor: true,
+    autoplay: { delay: 2500, disableOnInteraction: false },
+    pagination: { el: ".teamSwiper .swiper-pagination", clickable: true },
+    navigation: { nextEl: ".teamSwiper .swiper-button-next", prevEl: ".teamSwiper .swiper-button-prev" },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      576: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 } /* desktop shows 3 */
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+    <!-- Team Area -->
+    <!-- <div class="team-area pt-100 pb-70">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-sm-12 col-md-12">
+                        <div class="team-content">
+                            <div class="section-title-two">
+                                <span class="section-span-bg2">TEAM MEMBERS</span>
+                                <h2>We Are Pleased To <b class="section-color2">Meet You</b></h2>
+                                <a href="#" class="team-btn">
+                                    Meet Our Team
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-sm-6 col-md-6">
-                    <div class="team-card">
-                        <a href="team.html">
-                            <img src="assets/img/team/3.jpg" alt="Images">
-                        </a>
-                        <div class="content">
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="team-card active">
                             <a href="team.html">
-                                <h3>MORAH JEIN</h3>
-                                <span>Manager</span>
-                                <ul class="social-link">
-                                    <li>
-                                        <a href="https://www.facebook.com/login/" target="_blank"><i
-                                                class='bx bxl-facebook'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/i/flow/login" target="_blank"><i
-                                                class='bx bxl-twitter'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
-                                                class='bx bxl-instagram'></i></a>
-                                    </li>
-                                </ul>
+                                <img src="assets/img/team/1.jpg" alt="Images">
                             </a>
+                            <div class="content">
+                                <a href="team.html">
+                                    <h3>JORDHAN LEON</h3>
+                                    <span>Company Owner</span>
+                                    <ul class="social-link">
+                                        <li>
+                                            <a href="https://www.facebook.com/login/" target="_blank"><i
+                                                    class='bx bxl-facebook'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                    class='bx bxl-twitter'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                    class='bx bxl-instagram'></i></a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-sm-6 col-md-6">
-                    <div class="team-card active">
-                        <a href="team.html">
-                            <img src="assets/img/team/4.jpg" alt="Images">
-                        </a>
-                        <div class="content">
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="team-card">
                             <a href="team.html">
-                                <h3>KILIN WARD</h3>
-                                <span>Head of Optop</span>
-                                <ul class="social-link">
-                                    <li>
-                                        <a href="https://www.facebook.com/login/" target="_blank"><i
-                                                class='bx bxl-facebook'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/i/flow/login" target="_blank"><i
-                                                class='bx bxl-twitter'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
-                                                class='bx bxl-instagram'></i></a>
-                                    </li>
-                                </ul>
+                                <img src="assets/img/team/2.jpg" alt="Images">
                             </a>
+                            <div class="content">
+                                <a href="team.html">
+                                    <h3>DEVIT KILLER</h3>
+                                    <span>Sales Manager</span>
+                                    <ul class="social-link">
+                                        <li>
+                                            <a href="https://www.facebook.com/login/" target="_blank"><i
+                                                    class='bx bxl-facebook'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                    class='bx bxl-twitter'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                    class='bx bxl-instagram'></i></a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-sm-6 col-md-6">
-                    <div class="team-card">
-                        <a href="team.html">
-                            <img src="assets/img/team/5.jpg" alt="Images">
-                        </a>
-                        <div class="content">
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="team-card">
                             <a href="team.html">
-                                <h3>ENDON JEMS</h3>
-                                <span>Special Support</span>
-                                <ul class="social-link">
-                                    <li>
-                                        <a href="https://www.facebook.com/login/" target="_blank"><i
-                                                class='bx bxl-facebook'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/i/flow/login" target="_blank"><i
-                                                class='bx bxl-twitter'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
-                                                class='bx bxl-instagram'></i></a>
-                                    </li>
-                                </ul>
+                                <img src="assets/img/team/3.jpg" alt="Images">
                             </a>
+                            <div class="content">
+                                <a href="team.html">
+                                    <h3>MORAH JEIN</h3>
+                                    <span>Manager</span>
+                                    <ul class="social-link">
+                                        <li>
+                                            <a href="https://www.facebook.com/login/" target="_blank"><i
+                                                    class='bx bxl-facebook'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                    class='bx bxl-twitter'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                    class='bx bxl-instagram'></i></a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-sm-6 col-md-6">
-                    <div class="team-card">
-                        <a href="team.html">
-                            <img src="assets/img/team/6.jpg" alt="Images">
-                        </a>
-                        <div class="content">
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="team-card active">
                             <a href="team.html">
-                                <h3>LIAM WARD</h3>
-                                <span>Product Manager</span>
-                                <ul class="social-link">
-                                    <li>
-                                        <a href="https://www.facebook.com/login/" target="_blank"><i
-                                                class='bx bxl-facebook'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/i/flow/login" target="_blank"><i
-                                                class='bx bxl-twitter'></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
-                                                class='bx bxl-instagram'></i></a>
-                                    </li>
-                                </ul>
+                                <img src="assets/img/team/4.jpg" alt="Images">
                             </a>
+                            <div class="content">
+                                <a href="team.html">
+                                    <h3>KILIN WARD</h3>
+                                    <span>Head of Optop</span>
+                                    <ul class="social-link">
+                                        <li>
+                                            <a href="https://www.facebook.com/login/" target="_blank"><i
+                                                    class='bx bxl-facebook'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                    class='bx bxl-twitter'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                    class='bx bxl-instagram'></i></a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="team-card">
+                            <a href="team.html">
+                                <img src="assets/img/team/5.jpg" alt="Images">
+                            </a>
+                            <div class="content">
+                                <a href="team.html">
+                                    <h3>ENDON JEMS</h3>
+                                    <span>Special Support</span>
+                                    <ul class="social-link">
+                                        <li>
+                                            <a href="https://www.facebook.com/login/" target="_blank"><i
+                                                    class='bx bxl-facebook'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                    class='bx bxl-twitter'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                    class='bx bxl-instagram'></i></a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="team-card">
+                            <a href="team.html">
+                                <img src="assets/img/team/6.jpg" alt="Images">
+                            </a>
+                            <div class="content">
+                                <a href="team.html">
+                                    <h3>LIAM WARD</h3>
+                                    <span>Product Manager</span>
+                                    <ul class="social-link">
+                                        <li>
+                                            <a href="https://www.facebook.com/login/" target="_blank"><i
+                                                    class='bx bxl-facebook'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                                    class='bx bxl-twitter'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                                    class='bx bxl-instagram'></i></a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
     <!-- Team Area End -->
 
     <!-- Innovation Area -->
@@ -762,8 +976,8 @@
                             </p>
                         </div>
                         <!-- <div class="innovation-btn">
-                                                                                <a href="property-details.html" class="default-btn default-hot-toddy">View Details <i class='bx bx-right-arrow-alt'></i></a>
-                                                                            </div> -->
+                                                                                    <a href="property-details.html" class="default-btn default-hot-toddy">View Details <i class='bx bx-right-arrow-alt'></i></a>
+                                                                                </div> -->
                     </div>
                 </div>
 
@@ -789,13 +1003,13 @@
                             </div>
 
                             <!-- <div class="innovation-item">
-                                                                    <i class='flaticon-growth'></i>
-                                                                    <h3>Designed Marvel</h3>
-                                                                    <p>
-                                                                        Lorem ipsum doconsectetur adipisicing elit sed do eiusmod tempor
-                                                                        incididunt ut labore et dolore magna aliqua.Ut eveniam
-                                                                    </p>
-                                                                </div> -->
+                                                                        <i class='flaticon-growth'></i>
+                                                                        <h3>Designed Marvel</h3>
+                                                                        <p>
+                                                                            Lorem ipsum doconsectetur adipisicing elit sed do eiusmod tempor
+                                                                            incididunt ut labore et dolore magna aliqua.Ut eveniam
+                                                                        </p>
+                                                                    </div> -->
                         </div>
                     </div>
                 </div>
@@ -818,21 +1032,21 @@
                     <span style="font-size:16px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;">
                         CALL US NOW
                     </span>
-                    <h3 style="font-size:clamp(18px,2.6vw,22px);line-height:1.2;margin:0;">
+                    <h2 style="font-size:clamp(16px,1.6vw,20px);line-height:0.6;margin:0;">
                         <a href="tel:+5678555178" style="color:#fff;text-decoration:none;font-weight:700;">
                             +88 01911845500
                         </a>
-                    </h3>
+                    </h2>
                 </div>
                 <div class="map-content-right">
                     <span style="font-size:16px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;">
                         GET IN TOUCH
                     </span>
-                    <h3 style="font-size:clamp(18px,2.6vw,22px);line-height:1.2;margin:0;">
+                    <h2 style="font-size:clamp(18px,2.6vw,22px);line-height:0.6;margin:0;">
                         <a href="asarapropertiesbd@gmail.com" style="color:#fff;text-decoration:none;font-weight:300;">
                             asaraproperties.com
                         </a>
-                    </h3>
+                    </h2>
                 </div>
             </div>
         </div>
