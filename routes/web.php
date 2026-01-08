@@ -3,20 +3,23 @@
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
+
+// Controllers
 use App\Http\Controllers\Backend\ProjectController;
+use App\Http\Controllers\Backend\BlogController;
 use App\Http\Controllers\FrontProjectController;
+use App\Http\Controllers\FrontBlogController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
+// Models
 use App\Models\Project;
+use App\Models\Blog;
 
-
-// Route::get('/hellow', function () {
-//     return view('welcome');
-// })->name('home');
-
-// Route::view('dashboard', 'dashboard')
-//     ->middleware(['auth', 'verified'])
-//     ->name('dashboard');
-
-
+/*
+|--------------------------------------------------------------------------
+| AUTH / SETTINGS (Fortify + Volt)
+|--------------------------------------------------------------------------
+*/
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
@@ -28,7 +31,7 @@ Route::middleware(['auth'])->group(function () {
         ->middleware(
             when(
                 Features::canManageTwoFactorAuthentication()
-                    && Features::optionEnabled(Features::twoFactorAuthentication(), 'confirmPassword'),
+                && Features::optionEnabled(Features::twoFactorAuthentication(), 'confirmPassword'),
                 ['password.confirm'],
                 [],
             ),
@@ -36,63 +39,73 @@ Route::middleware(['auth'])->group(function () {
         ->name('two-factor.show');
 });
 
-// -----------------------------
-// FRONTEND ROUTES
-// -----------------------------
-Route::view('/', 'home')->name('home');
+/*
+|--------------------------------------------------------------------------
+| FRONTEND ROUTES
+|--------------------------------------------------------------------------
+*/
+
+// Home page (dynamic: latest 3 published blogs)
+Route::get('/', function () {
+    $blogs = Blog::where('status', 1)
+        ->orderByDesc('published_at')
+        ->orderByDesc('id')
+        ->take(3)
+        ->get();
+
+    return view('home', compact('blogs'));
+})->name('home');
+
+// Static pages
 Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact')->name('contact');
+Route::get('/news-events', [FrontBlogController::class, 'index'])
+    ->name('news.index');
 
-// Dynamic single project details
-Route::get('/projects/{slug}', [FrontProjectController::class, 'show'])
-    ->name('project.details');
-
-
-
+// Projects frontend
 Route::get('/projects', [FrontProjectController::class, 'index'])->name('projects');
+Route::get('/projects/{slug}', [FrontProjectController::class, 'show'])->name('project.details');
 
+// Blog popup + details page
+// Route::get('/blog-json/{slug}', [FrontBlogController::class, 'json'])->name('blog.json');
+Route::get('/blog/{slug}', [FrontBlogController::class, 'detailPage'])->name('blog.detail');
 
-
-
-// -----------------------------
-// ADMIN ROUTES
-// -----------------------------
+/*
+|--------------------------------------------------------------------------
+| ADMIN ROUTES
+|--------------------------------------------------------------------------
+*/
 Route::prefix('admin')->middleware(['auth', 'verified'])->name('admin.')->group(function () {
 
-    // ⚠️ Must come FIRST so Laravel matches it before DELETE /projects/{project}
+    Route::get('/', function () {
+        return view('backend.dashboard');
+    })->name('dashboard');
+
     Route::delete('projects/gallery/{id}', [ProjectController::class, 'deleteGallery'])
         ->name('projects.gallery.destroy');
 
-    // RESTful CRUD routes for projects
     Route::resource('projects', ProjectController::class);
+    Route::resource('blog', BlogController::class)->except(['show']);
 });
 
-
-
-
-
-
-// Test page: http://127.0.0.1:8000/projects-test/{slug}
+/*
+|--------------------------------------------------------------------------
+| TEST ROUTE (your existing testing page)
+|--------------------------------------------------------------------------
+*/
 Route::get('/projects-test/{slug}', function ($slug) {
-    $project = Project::with(['features','overviews','galleries'])
+    $project = Project::with(['features', 'overviews', 'galleries'])
         ->where('slug', $slug)
         ->firstOrFail();
 
-    // ⬇️ Use the correct view name based on where you saved the file:
-    // If saved at resources/views/project-details-testing.blade.php:
     return view('project-details-testing', compact('project'));
-
-    // If you saved it under resources/views/front/project-details-testing.blade.php,
-    // use this instead:
-    // return view('front.project-details-testing', compact('project'));
 })->name('project.details.testing');
 
-
-
-
-// routes/web.php
-use App\Http\Controllers\Auth\AuthenticatedSessionController;
-
+/*
+|--------------------------------------------------------------------------
+| LOGOUT ROUTE
+|--------------------------------------------------------------------------
+*/
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
     ->middleware('auth')
     ->name('logout');

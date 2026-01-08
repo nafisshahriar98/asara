@@ -277,6 +277,9 @@
                         <li class="nav-item">
                             <a href="{{ route('projects') }}" class="nav-link">Projects</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('news.index') }}" class="nav-link">News & Events</a>
+                        </li>
 
                         <li class="nav-item">
                             <a href="{{ route('contact') }}" class="nav-link">Contact</a>

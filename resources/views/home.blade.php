@@ -533,7 +533,7 @@
                     <div class="service-card service-card-bg-two section-bg">
                         <i class='flaticon-house'></i>
                         <a href="service-details.html">
-                            <h3>Residentital Development</h3>
+                            <h3>Residential Development</h3>
                         </a>
                         <p class="text-break">Building modern, comfortable homes with thoughtful design and superior
                             craftsmanship</p>
@@ -594,9 +594,18 @@
     </div>
     <!-- Property Area End Two -->
     --}}
-    <!-- =======================
-                                 Property Area Two (DROP-IN)
-                            ======================= -->
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- =======================                                 Property Area Two (DROP-IN)                            ======================= -->
     <div class="property-area-two pb-70">
         <div class="container">
             <!-- remove horizontal gap between the two columns -->
@@ -687,6 +696,138 @@
             /* flush image edge */
         }
     </style>
+
+
+
+
+
+
+
+
+
+{{-- ====== ASARA: Exterior / Interior Videos (Professional, White BG) ====== --}}
+<section class="asara-video-duo py-5">
+  <div class="container">
+
+    <div class="asara-section-head text-center mb-4">
+      <span class="asara-kicker">VIDEO TOUR</span>
+      <h2 class="asara-heading">Exterior & <span>Interior</span></h2>
+      <p class="asara-subtitle mb-0">
+        Take a quick look at the outside view and step inside to experience the details.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      {{-- Exterior --}}
+      <div class="col-lg-6">
+        <div class="asara-video-card h-100">
+          <div class="asara-video-frame">
+            <video
+              class="asara-video"
+              src="{{ asset('assets/img/videos/exterior.mp4') }}"
+              controls
+              playsinline
+              preload="metadata">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="asara-video-body">
+            <div class="asara-pill">Exterior</div>
+            <h3 class="asara-video-title">Building & Surroundings</h3>
+            <p class="asara-video-text">
+              A clear view of the facade, approach, and environment — designed for modern living.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {{-- Interior --}}
+      <div class="col-lg-6">
+        <div class="asara-video-card h-100">
+          <div class="asara-video-frame">
+            <video
+              class="asara-video"
+              src="{{ asset('assets/img/videos/interior.mp4') }}"
+              controls
+              playsinline
+              preload="metadata">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="asara-video-body">
+            <div class="asara-pill">Interior</div>
+            <h3 class="asara-video-title">Layout & Finishing</h3>
+            <p class="asara-video-text">
+              Explore rooms, natural light, and finishing details — comfort-focused, clean, and elegant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .asara-video-duo{ background:#ffffff; }
+  .asara-section-head{ max-width: 780px; margin: 0 auto; }
+  .asara-kicker{
+    display:inline-block; font-size:12px; letter-spacing:.18em;
+    font-weight:800; color:#0e4f27; text-transform:uppercase; margin-bottom:10px;
+  }
+  .asara-heading{
+    margin:0 0 10px; font-weight:900; color:#0f172a;
+    font-size:clamp(26px, 2.4vw, 40px); line-height:1.15;
+  }
+  .asara-heading span{ color:#0e4f27; }
+  .asara-subtitle{ color:#64748b; font-size:15px; line-height:1.8; }
+
+  .asara-video-card{
+    background:#fff; border:1px solid rgba(15,23,42,.08);
+    border-radius:18px; overflow:hidden;
+    box-shadow:0 12px 30px rgba(15,23,42,.06);
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .asara-video-card:hover{
+    transform: translateY(-3px);
+    box-shadow:0 18px 50px rgba(15,23,42,.10);
+    border-color: rgba(14,79,39,.22);
+  }
+
+  .asara-video-frame{
+    background:#0b1220;
+    width:100%;
+    aspect-ratio:16/9;
+    overflow:hidden;
+  }
+  .asara-video{ width:100%; height:100%; object-fit:cover; display:block; }
+
+  .asara-video-body{ padding:20px 20px 22px; }
+  .asara-pill{
+    display:inline-flex; align-items:center;
+    padding:6px 10px; border-radius:999px;
+    background: rgba(14,79,39,.08);
+    color:#0e4f27; font-size:12px; font-weight:800;
+    letter-spacing:.06em; text-transform:uppercase; margin-bottom:10px;
+  }
+  .asara-video-title{
+    margin:0 0 8px; font-weight:900; color:#0f172a;
+    font-size:20px; line-height:1.25;
+  }
+  .asara-video-text{ margin:0; color:#64748b; line-height:1.85; font-size:15px; }
+
+  @media (max-width: 576px){
+    .asara-video-body{ padding:16px; }
+    .asara-video-title{ font-size:18px; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .asara-video-card{ transition:none !important; }
+  }
+</style>
+
+
 
     <!-- Project Area -->
     {{--
@@ -1235,8 +1376,106 @@
     <!-- Apartment Offer Area End -->
 
 
+
+
+{{-- News & Events (Listing) --}}
+
+<div class="blog-area-two pb-70">
+    <div class="container">
+        <div class="section-title-two text-center">
+            <span class="section-span-bg">News & Events</span>
+            <h2 class="margin-auto">News & <b class="section-color">Events</b></h2>
+        </div>
+
+        <div class="row pt-45 g-4">
+            @forelse(($blogs ?? collect()) as $b)
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="blog-card w-100">
+                        <a href="{{ route('blog.detail', $b->slug) }}" class="rb-blog-thumb">
+                            <img
+                                src="{{ $b->thumbnail ? asset('storage/'.$b->thumbnail) : asset('assets/img/blog/1.jpg') }}"
+                                alt="{{ $b->title }}">
+                        </a>
+
+                        <div class="content">
+                            <span class="rb-blog-meta">
+                                {{ $b->published_at?->format('F d, Y') ?? '' }}
+                                @if($b->category?->name)
+                                    / <a href="javascript:void(0)">{{ $b->category->name }}</a>
+                                @endif
+                            </span>
+
+                            <a href="{{ route('blog.detail', $b->slug) }}" class="rb-blog-title-link">
+                                <h3>{{ $b->title }}</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            @empty
+                <div class="col-12 text-center pt-4">
+                    <p class="text-muted mb-0">No news available right now.</p>
+                </div>
+            @endforelse
+        </div>
+
+        {{-- Pagination (only if using paginate in controller) --}}
+        @if(isset($blogs) && method_exists($blogs, 'hasPages') && $blogs->hasPages())
+            <div class="mt-4 d-flex justify-content-center">
+                {{ $blogs->links() }}
+            </div>
+        @endif
+    </div>
+</div>
+
+<style>
+/* Make cards equal height + alignment */
+.blog-area-two .blog-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+/* Thumbnail */
+.blog-area-two .rb-blog-thumb{
+  display:block;
+  width:100%;
+}
+.blog-area-two .rb-blog-thumb img{
+  width:100%;
+  height:clamp(220px, 20vw, 300px);
+  object-fit:cover;
+  display:block;
+}
+
+/* Content area fills remaining height */
+.blog-area-two .blog-card .content{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+/* Meta */
+.blog-area-two .rb-blog-meta{
+  display:block;
+}
+
+/* Keep titles visually aligned (optional) */
+.blog-area-two .blog-card .content h3{
+  min-height:56px;
+  line-height:1.35;
+  margin-bottom:0;
+}
+</style>
+
+
+
+
+
+
+
     <!-- Blog Area -->
-    <div class="blog-area-two pb-70">
+    <!-- <div class="blog-area-two pb-70">
         <div class="container">
             <div class="section-title-two text-center">
                 <span class="section-span-bg">News & Events</span>
@@ -1286,7 +1525,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Blog Area End -->
 
     {{--
